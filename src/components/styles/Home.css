@@ -22,7 +22,10 @@
   }
   .events h1{
       line-height: 150px;
-      margin-left: 100px
+      margin-left: 100px;
+      font-weight: bold;
+      font-style: italic;
+      
   }
   .events .event{
     width: 25%;
@@ -38,9 +41,10 @@
     height: 40vh !important;
     display: flex;
     overflow: hidden;
+    
   }
   .event .image img{
-    
+    width: 100%;
     transition: 0.5s all ease-in-out;
     
   }
