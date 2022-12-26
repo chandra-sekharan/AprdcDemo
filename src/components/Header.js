@@ -22,9 +22,9 @@ const Header =()=>{
     }
     
     const open = () =>{                                              //An event handler for main menu opening                            
-
+        var home = document.getElementsByClassName('homesection')[0];
+        home.style.display="none";
         var l =document.getElementById('menubox');    
-  
         l.style.marginTop = '0';
         l.style.opacity = '1';
          
@@ -38,7 +38,11 @@ const Header =()=>{
     }
 
    const close = ()=>{                                            //An event handler for main menu closing  
-        document.getElementById('submenus').style.display="none";
+         
+    var home = document.getElementsByClassName('homesection')[0];
+    home.style.display="block";
+    
+       document.getElementById('submenus').style.display="none";
         var z =document.getElementById('menubox');    
 
          z.style.marginTop = '-100%';
