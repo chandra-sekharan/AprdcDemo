@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  background-image:  linear-gradient(to bottom , rgba(255, 255, 255, 0.438),rgba(184, 183, 183, 0.959)),url(../images/winter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.Homecontent h1{
+  color:#181818;
+  margin-top: 150px;
+  font-weight: bold;
+  font-size: 35px;
+  font-family: Canela Deck Web;
+}
+
+
+
+
+
+
+.header{
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+.logo{
+    display: flex;
+    width: 30%;
+    margin-left: 60px;
+
+}
+.logo img{
+    width: 17em;
+    height: 6em;
+}
+.logo h3{
+    color: white;
+    font-family:'Noto Serif TC', serif;
+    margin-top: 10px;
+    font-weight: lighter;
+    font-size:medium;
+    font-weight:light;
+}
+.logo h4{
+    margin-top: 30px;
+    margin-left: -123px;
+    font-family:'Noto Serif TC', serif;
+    color: white;   
+}
+ .menu{
+  width: 10%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  
+ } 
+.bar1 {
+  width: 40px;
+  height: 0.7vh;
+  position: relative;
+  top: 3px;
+  margin-top: 10px;
+  background-color: white;
+}
+.menu:hover{
+  opacity: 0.5;
+}
+#menubox{
+  width: 100%;
+  position: absolute;
+  background-color: #0e0e0e;
+  transition: all .4s ease-in-out;
+  margin-top: -100%;
+  opacity: 0;
+  overflow: hidden;
+}
+#menubox span{
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 15px;
+
+}
+#menubox label{
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-top: 19px;
+  margin-right: 10px;
+}
+#menubox span:hover{
+   transform: scale(1.5);
+}
+
+.header1{
+  width: 100%;
+  height: 97px;
+  display: flex;
+  
+}
+.header1 .logo{
+  display: flex;
+  width: 30%;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.header1 .logo img{
+  width: 20em;
+  height: 20em;
+  margin-top: -95px;
+}
+.header1 .close{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-top: -30px;
+}
+.header1 .close span{
+  width: 20px;
+  height: 22px;
+  display: flex;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 15px;
+
+}
+.header1 .close label{
+  color: white;
+  font-weight: bold;
+}
+.header1 span:hover{
+   transform: scale(1.5);
+}
+.menucontainer{
+  display: flex;
+}
+.menucontent{
+  width: 25%;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  
+}
+::-webkit-scrollbar {
+  width: 7px;
+  
+}
+::-webkit-scrollbar-track {
+  background:linear-gradient(to bottom ,#0e0e0e, #35393d);
+}
+::-webkit-scrollbar-thumb {
+  
+  background: linear-gradient(to bottom , #35393d , #0e0e0e);
+  border-radius: 18px;
+}
+
+.menucontent li{
+  list-style: none;
+  color: white;
+  font-size: 48px;
+  letter-spacing: .1px;
+  margin-top: -40px;
+  opacity: 0;
+  margin-left: 30px; 
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-family: Canela Deck Web;
+  transition: all .6s ease-in-out;
+  cursor: pointer; 
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.menucontent li::after{
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 1px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .4s ease;
+  -webkit-transition: width .4s ease;
+}
+.menucontent li:hover::after{
+    left: 0;
+    background: #fff;
+    width:100%;
+  }
+ 
+ #menubox .footer{
+    width: 100%;
+    height: 84px;
+    border-top: 1.5px solid #35393d;
+  }
+  #menubox .footer li:first-child{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 40px;
+    color:#505f6d;
+    font-weight: bold;
+    font-size: medium;
+  }
+  #menubox .footer li:first-child::after{
+    content: url(../images/arrow.png);
+    margin-left: 15px;
+    position: relative;
+    top: 5px;
+    }
+#menubox .footer li{
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+
+}
+#menubox .footer li:hover{
+  color: #878c91;
+}
