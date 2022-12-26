@@ -77,9 +77,9 @@ const Header =()=>{
             <div className="menucontainer">
                <div className="menucontent">
                 <ul>
-                    <li onClick={()=>sub(Administration)}>Administration</li>
-                    <li onClick={()=>sub(Academics)}>Academics</li>
-                    <li onClick={()=>sub(Facilities)}>Facilities</li>
+                    <li onClick={()=>sub(Administration)}>Administration</li><br></br>
+                    <li onClick={()=>sub(Academics)}>Academics</li><br></br>
+                    <li onClick={()=>sub(Facilities)}>Facilities</li><br></br>
                     <li onClick={()=>sub(Campus)}>Campus</li><br></br>
                     <li onClick={()=>sub(Visit)}>Visit</li><br></br>
                     <li onClick={()=>sub(About)}>About</li>
@@ -88,7 +88,7 @@ const Header =()=>{
                 <Submenu items={menuitems}/>
                  
              </div>   
-                <div className="footer">   
+             <div className="footer">   
                     <li>Quick Links</li>
                     <li>Events</li>
                     <li>Support</li>

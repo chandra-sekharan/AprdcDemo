@@ -103,3 +103,24 @@
     width: 100%;
     height: 8vh !important;
   }
+
+  .gallery , .college_stren , .footer_end{
+    background-color: black;
+  }
+  .college_stren{
+    width: 100%;
+    height: 40vh;
+    
+  }
+  .footer_end{
+    width: 100%;
+    height: 50vh;
+    
+  }
+  .footer_end img{
+    width: 70px;
+  }
+  .footer_end h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+  }

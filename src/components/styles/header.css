@@ -56,6 +56,7 @@
 }
 #menubox{
   width: 100%;
+  height: 100%;
   position: fixed;
   background-color: #0e0e0e;
   transition: all .4s ease-in-out;
@@ -129,15 +130,12 @@
    transform: scale(1.5);
 }
 .menucontainer{
+  width: 100%;
+  height: 74%; 
   display: flex;
 }
 .menucontent{
-  width: 25%;
-  height: 30em;
-  display: flex;
-  flex-direction: column;
   overflow-y: scroll;
-  
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -190,26 +188,31 @@
   }
  
  #menubox .footer{
+    list-style: none;
+    color: white;
     width: 100%;
-    height: 85px;
+    display: flex;
+    left: 0;
+    bottom: 0;
     border-top: 1.5px solid #35393d;
+    
   }
-  #menubox .footer li:first-child{
+#menubox .footer li:first-child{
     display: inline-block;
-    margin-top: 5px;
-    margin-left: 40px;
+    margin-top: 24px;
+    margin-left: 43px;
     color:#505f6d;
     font-weight: bold;
     font-size: medium;
   }
-  #menubox .footer li:first-child::after{
+ #menubox .footer li:first-child::after{
     content: url(../images/arrow.png);
-    margin-left: 15px;
+    margin-left: 18px;
     position: relative;
     top: 5px;
     }
 #menubox .footer li{
-  display: inline-block;
+  
   margin-top: 30px;
   margin-left: 40px;
   color: white;
