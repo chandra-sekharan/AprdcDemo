@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../components/styles/header.css';
-import logo from './images/collegelogo12.png';
+import logo from './images/logo.png';
 import logo1 from './images/AP1.png';
 import Submenu from "./Submenu";
 
@@ -58,6 +58,10 @@ const Header =()=>{
         <div className="header">
             <div className="logo">
             <img src={logo} alt=""/>
+            <div className="logotext">
+            <p>ANDHRA PRADESH</p>
+            <span>Residential Degree College</span>
+            </div>
             </div>
             <div className="menu" onClick={()=>open()}>
             <div className="bar1"></div>
@@ -67,7 +71,11 @@ const Header =()=>{
             <div id="menubox">
             <div className="header1">
             <div className="logo">
-            <img src={logo1} alt=""/>
+            <img src={logo} alt=""/>
+            <div className="logotext">
+            <p>ANDHRA PRADESH</p>
+            <label>Residential Degree College</label>
+            </div>
             </div>
             <div className="close">
                <label >Close</label>

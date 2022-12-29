@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Libre+Baskerville:wght@700&family=Noto+Serif+TC:wght@200&display=swap'); 
 *{
   margin: 0;
   padding: 0;
@@ -7,33 +8,38 @@
 
 .header{
     width: 100%;
-    height: 120px;
+    height: 80px;
     display: flex;
+   
 }
 .logo{
-    display: flex;
     width: 30%;
-    margin-left: 60px;
-
+    
+    margin-left: 40px;
+    display: flex;
+    
 }
 .logo img{
-    width: 17em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
 }
-.logo h3{
-    color: white;
-    font-family:'Noto Serif TC', serif;
-    margin-top: 10px;
-    font-weight: lighter;
-    font-size:medium;
-    font-weight:light;
+.logotext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
-.logo h4{
-    margin-top: 30px;
-    margin-left: -123px;
-    font-family:'Noto Serif TC', serif;
-    color: white;   
+.logotext p{
+    color: black;
+    font-weight: bold;
+    font-family: 'Libre Baskerville', serif;
+    
 }
+.logotext span{
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+}
+
  .menu{
   width: 6%;
   height: 60px;
@@ -95,17 +101,37 @@
   display: flex;
   
 }
+
 .header1 .logo{
-  display: flex;
   width: 30%;
-  margin-left: 20px;
-  overflow: hidden;
+  margin-left: 20px !important;
+  align-items: center;
+  display: flex;
 }
 .header1 .logo img{
-  width: 20em;
-  height: 20em;
-  margin-top: -95px;
+  width: 5em;
+  height: 5em;
 }
+.header1 .logotext{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.header1 .logotext p{
+  color:white;
+  
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+  
+}
+.header1 .logotext label{
+font-size: 20px;
+margin-top: 0px !important;
+font-family: 'EB Garamond', serif;
+}
+
+
 .header1 .close{
   display: flex;
   margin-left: auto;
@@ -135,7 +161,7 @@
   display: flex;
 }
 .menucontent{
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 ::-webkit-scrollbar {
   width: 7px;
@@ -190,8 +216,12 @@
  #menubox .footer{
     list-style: none;
     color: white;
+    position: absolute;
     width: 100%;
+    padding-top: 22px;
+    padding-bottom: 22.5px;
     display: flex;
+    align-items: center;
     left: 0;
     bottom: 0;
     border-top: 1.5px solid #35393d;
@@ -199,7 +229,6 @@
   }
 #menubox .footer li:first-child{
     display: inline-block;
-    margin-top: 24px;
     margin-left: 43px;
     color:#505f6d;
     font-weight: bold;
@@ -213,7 +242,7 @@
     }
 #menubox .footer li{
   
-  margin-top: 30px;
+ 
   margin-left: 40px;
   color: white;
   font-weight: bold;
