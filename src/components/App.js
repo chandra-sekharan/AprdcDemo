@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Home';
 import Administration from './Administration';
 import Header from './Header';
+import Nonteaching from './Nonteaching';
 
 
 const App =() => {
@@ -14,6 +15,7 @@ const App =() => {
        <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Administrative-staff' element={<Administration/>} />
+        <Route path='/Non-teaching-staff' element={<Nonteaching/>} />
        </Routes>     
     </div>
     </BrowserRouter>
