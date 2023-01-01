@@ -1,18 +1,38 @@
 import React, { useState } from "react";
 import '../components/styles/header.css';
 import logo from './images/logo.png';
-import logo1 from './images/AP1.png';
 import Submenu from "./Submenu";
 
 
 const Header =()=>{
 
-    const Administration = ["Administrative staff" ,"committees","Teaching staff","Non-teaching staff", "Internal complaints committee"];
-    const Academics = ["Programs Offered","Admissions","Program Outcomes","Departments","Academic Calender","Achievements","Skill based courses","Syllabus"];
-    const Facilities=["Hostel","Health Center","RO Water Plant","Internet Facility","GYM"];
-    const Campus = ["Library","Rusa","NCC","NSS","Placement Cell","Digital Classroom","Laboratories"];
-    const Visit = ["Visit APRDC" , "Maps and Direction"];
-    const About = ["History of APRDC","List of succcession of Principals","College Profile","NIRF","AISHE"];
+    const Administration = [
+        {
+            id:"Administrative-staff",
+            name: "Administrative staff",
+        },
+         {
+            id:"committees",
+            name:"committees",
+         },
+         {
+            id:"Teaching-staff",
+            name:"Teaching staff",
+         },
+         {
+            id:"Non-teaching-staff",
+            name:"Non-teaching staff",
+         },
+         {
+            id:"Internal-Complaints-Committee",
+            name:"Internal complaints committee",
+         },  
+        ];
+    const Academics = [{id:"Programs-Offered",name:"Programs Offered",},{id:"Admissions",name:"Admissions",},{id:"Program Outcomes",name:"Program Outcomes",},{id:"Departments",name:"Departments"},{id:"Academic-Calender",name:"Academic Calender"},{id:"Achievements",name:"Achievements"},{id:"Skill based courses",name:"Skill based courses"},{id:"Syllabus",name:"Syllabus"},];
+    const Facilities=[{id:"Hostel",name:"Hostel",},{id:"Health-Center",name:"Health Center",},{id:"RO-Water-Plant",name:"RO Water Plant",},{id:"Internet-Facility",name:"Internet Facility",},{id:"GYM",name:"GYM",},];
+    const Campus = [{id:"Library",name:"Library",},{id:"Rusa",name:"Rusa",},{id:"NCC",name:"NCC",},{id:"NSS",name:"NSS",},{id:"Placement-Cell",name:"Placement Cell",},{id:"Digital-Classroom",name:"Digital Classroom"},{id:"Laboratories",name:"Laboratories",},];
+    const Visit = [{id:"Visit-APRDC",name:"Visit APRDC"} , {id:"Maps-and-Direction",name:"Maps and Direction"},];
+    const About = [{id:"History-of-APRDC",name:"History of APRDC"},{id:"List-of-succcession-of-Principals",name:"List of succcession of Principals"},{id:"College-Profile",name:"College Profile"},{id:"NIRF",name:"NIRF"},{id:"AISHE",name:"AISHE"},];
 
     const [menuitems , setitems] = useState(['']);
     
@@ -22,12 +42,15 @@ const Header =()=>{
     }
     
     const open = () =>{                                              //An event handler for main menu opening                            
-        var home = document.getElementsByClassName('homesection')[0];
-        home.style.display="none";
+     
+        var body = document.getElementsByTagName('body')[0];
+
+        body.style.overflow = "hidden";
+        
         var l =document.getElementById('menubox');    
         l.style.marginTop = '0';
         l.style.opacity = '1';
-         
+     
      var k = document.querySelectorAll('li') ;
       for(let i=0 ; i<=5;i++)
       {    
@@ -39,9 +62,10 @@ const Header =()=>{
 
    const close = ()=>{                                            //An event handler for main menu closing  
          
-    var home = document.getElementsByClassName('homesection')[0];
-    home.style.display="block";
-    
+    var body = document.getElementsByTagName('body')[0];
+
+     body.style.overflow = "auto";
+
        document.getElementById('submenus').style.display="none";
         var z =document.getElementById('menubox');    
 
@@ -49,6 +73,8 @@ const Header =()=>{
          z.style.opacity = '0';
          
          setitems(['']);
+
+
          
              
     }
@@ -63,7 +89,7 @@ const Header =()=>{
             <span>Residential Degree College</span>
             </div>
             </div>
-            <div className="menu" onClick={()=>open()}>
+            <div className="menu" onClick={open}>
             <div className="bar1"></div>
             <div className="bar1"></div>
             <div className="bar1"></div>
@@ -79,7 +105,7 @@ const Header =()=>{
             </div>
             <div className="close">
                <label >Close</label>
-                <span onClick={()=>close()}>X</span>
+                <span onClick={close}>X</span>
             </div>
             </div>
             <div className="menucontainer">
@@ -93,7 +119,7 @@ const Header =()=>{
                     <li onClick={()=>sub(About)}>About</li>
                 </ul>
                 </div>
-                <Submenu items={menuitems}/>
+                <Submenu items={menuitems} close={close}/>
                  
              </div>   
              <div className="footer">   

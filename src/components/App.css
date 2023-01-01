@@ -1,0 +1,18 @@
+
+
+
+
+@media screen and (min-width: 705px) and (max-width: 1078){
+ 
+ .header .logo img{
+    width: 8em;
+    height: 8em;
+ }
+ .header .logotext p {
+    font-size: 28px;
+
+ }
+ .header .logotext span{
+    font-size: 30px;
+ }
+}

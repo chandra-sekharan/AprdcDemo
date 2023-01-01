@@ -1,13 +1,22 @@
 import React from 'react';
+import { BrowserRouter,Routes , Route } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
+import Administration from './Administration';
+import Header from './Header';
 
 
-function App() {
+const App =() => {
   return (
+    <BrowserRouter>
     <div>
-      <Home/>
+      <Header/>
+       <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Administrative-staff' element={<Administration/>} />
+       </Routes>     
     </div>
+    </BrowserRouter>
   );
 }
 
