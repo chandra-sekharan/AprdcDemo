@@ -47,9 +47,8 @@ const Header =()=>{
 
         body.style.overflow = "hidden";
         
-        var l =document.getElementById('menubox');    
-        l.style.marginTop = '0';
-        l.style.opacity = '1';
+        var l =document.getElementsByClassName('menubox')[0];    
+        l.classList.add('active');
      
      var k = document.querySelectorAll('li') ;
       for(let i=0 ; i<=5;i++)
@@ -62,26 +61,25 @@ const Header =()=>{
 
    const close = ()=>{                                            //An event handler for main menu closing  
          
-    var body = document.getElementsByTagName('body')[0];
+       var body = document.getElementsByTagName('body')[0];
 
-     body.style.overflow = "auto";
+        body.style.overflow = "auto";
 
-       document.getElementById('submenus').style.display="none";
-        var z =document.getElementById('menubox');    
+       
+        var m =document.getElementsByClassName('menubox')[0];    
+        m.classList.remove('active');
 
-         z.style.marginTop = '-100%';
-         z.style.opacity = '0';
          
          setitems(['']);
 
-
+          document.getElementById('submenus').style.display="none";
          
              
     }
     
     
     return(
-        <div className="header">
+        <div className="header" >
             <div className="logo">
             <img src={logo} alt=""/>
             <div className="logotext">
@@ -94,7 +92,7 @@ const Header =()=>{
             <div className="bar1"></div>
             <div className="bar1"></div>
             </div>
-            <div id="menubox">
+            <div id="menubox" className="menubox">
             <div className="header1">
             <div className="logo">
             <img src={logo} alt=""/>

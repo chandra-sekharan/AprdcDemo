@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import './styles/Home.css';
 import ncc from './images/ncc.jpg'
 import sports from './images/sports.jpg'
@@ -196,6 +195,7 @@ const Home = ()=>{
             
         </div>
         <div className="homesection" id="homesection" >
+        
         <div className="events" >
         <h1>Happenings in APRDC</h1>
             {Moments.map(data =>
@@ -211,8 +211,9 @@ const Home = ()=>{
             <footer></footer>
             </div> 
             <div className="labs">
+            
             <div className="events">
-                <h1>HANDS-ON LAB</h1>
+            <h1>HANDS-ON LAB</h1>    
                 {lab.map(data=>
                 <div className="event">
                    <div className="image">
@@ -263,7 +264,7 @@ const Home = ()=>{
                </div>
               </div>
                <footer>
-                  <center><p>Copyright © 2020 APRDC Nagarjuna Sagar - All Rights Reserved.</p></center>
+                  <center><p>Copyright © 2023 APRDC Nagarjuna Sagar - All Rights Reserved.</p></center>
                </footer>
             </div>
             </div>

@@ -79,12 +79,17 @@
 .Employees table{
     width: 100%;
     border-collapse: collapse;
+    
 }
 .Employees img{
     width: 150px;
     height: 30vh;
 }
-td, th {
+.Employees th{
+    border: none ;
+    border-bottom: 1px solid #b9b8b8;
+}
+.Employees td, th {
     border-bottom: 2px solid #b9b8b8;
     text-align: center;
     padding: 8px;
@@ -111,3 +116,102 @@ td, th {
   .nonteaching tr:nth-child(even){
     background-color: #c3cfeb;
   }
+
+  /* Internal */
+
+.internal h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 26px;
+    color: #107896;
+}
+.internal {
+    font-size: 17px;
+    width: 95%;
+    margin: auto;
+    color: black;
+    background-color: #FFEBAD;
+}
+.internalMain{
+    background-color: #FFEBAD;
+    
+}
+.internal h2{
+    width: 68%;
+    margin: auto;
+   color:rgb(4, 54, 56);   
+}
+.internal span{
+    float: right;
+    font-weight: bold;
+    color: #046619;
+}
+.internal footer{
+    height: 13vh;
+}
+
+
+/*Committees*/
+
+
+.committees{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.committees h2{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    
+}
+.committees span{
+    float: right;
+    font-weight: bold;
+}
+.committees table{
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid black;
+}
+.committees td ,th{
+    border: 1px solid rgb(134, 133, 133);
+}
+.committees table td{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    
+}
+.committeesMain footer{
+    height: 13vh;
+}
+
+/*teaching js */
+
+.faculty {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+.faculty h1{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 51, 75);
+}
+.faculty table{
+    width: 100%;
+    
+}
+.faculty th{
+    border: none;
+    border-bottom: 1px solid #b9b8b8;
+}
+.faculty td{
+    border-bottom: 1px solid #b9b8b8;
+    text-align: center;
+    padding: 8px;
+}
