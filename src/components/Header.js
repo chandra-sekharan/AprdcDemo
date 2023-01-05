@@ -48,7 +48,7 @@ const Header =()=>{
        // body.style.overflow = "hidden";
         
         var l =document.getElementById('menubox');    
-        l.style.marginTop = '0';
+        l.style.marginTop = '0%';
         l.style.opacity = '1';
      
      var k = document.querySelectorAll('li') ;
