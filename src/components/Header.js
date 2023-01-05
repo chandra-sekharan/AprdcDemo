@@ -43,9 +43,9 @@ const Header =()=>{
     
     const open = () =>{                                              //An event handler for main menu opening                            
      
-        var body = document.getElementsByTagName('body')[0];
+      //  var body = document.getElementsByTagName('body')[0];
 
-        body.style.overflow = "hidden";
+       // body.style.overflow = "hidden";
         
         var l =document.getElementById('menubox');    
         l.style.marginTop = '0';
