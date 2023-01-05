@@ -66,14 +66,14 @@ const Header =()=>{
     // body.style.overflow = "auto";
 
        document.getElementById('submenus').style.display="none";
-        var l =document.getElementsByClassName('menubox')[0];    
-        l.classList.remove('active');
+        var m =document.getElementsByClassName('menubox')[0];    
+        m.classList.remove('active');
 
          
-         setitems(['']);
+         //setitems(['']);
 
 
-         alert("ok")
+         //alert("ok")
              
     }
     
