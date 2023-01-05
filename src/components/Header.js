@@ -69,7 +69,7 @@ const Header =()=>{
        document.getElementById('submenus').style.display="none";
         var z =document.getElementById('menubox');    
 
-         z.style.marginTop = '-100px';
+         z.style.marginTop = '-100%';
          z.style.opacity = '0';
          
          setitems(['']);
