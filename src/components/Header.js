@@ -81,7 +81,7 @@ const Header =()=>{
     
     
     return(
-        <div className="header">
+        <div className="header" onClick={open}>
             <div className="logo">
             <img src={logo} alt=""/>
             <div className="logotext">
