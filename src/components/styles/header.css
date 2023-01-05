@@ -67,7 +67,7 @@
 .menu:active{
   background-color: rgb(44, 44, 44);
 }
-#menubox{
+.menubox{
   width: 100%;
   height: 100%;
   position:fixed;
@@ -78,6 +78,10 @@
   overflow: hidden;
   z-index: 999;
   
+}
+.menubox.active{
+   margin-top:0;
+   opacity:1,
 }
 #menubox span{
   width: 20px;
