@@ -43,9 +43,9 @@ const Header =()=>{
     
     const open = () =>{                                              //An event handler for main menu opening                            
      
-      //  var body = document.getElementsByTagName('body')[0];
+        var body = document.getElementsByTagName('body')[0];
 
-       // body.style.overflow = "hidden";
+        body.style.overflow = "hidden";
         
         var l =document.getElementsByClassName('menubox')[0];    
         l.classList.add('active');
@@ -61,19 +61,19 @@ const Header =()=>{
 
    const close = ()=>{                                            //An event handler for main menu closing  
          
-   // var body = document.getElementsByTagName('body')[0];
+       var body = document.getElementsByTagName('body')[0];
 
-    // body.style.overflow = "auto";
+        body.style.overflow = "auto";
 
        
         var m =document.getElementsByClassName('menubox')[0];    
         m.classList.remove('active');
 
          
-         //setitems(['']);
+         setitems(['']);
 
-document.getElementById('submenus').style.display="none";
-         //alert("ok")
+          document.getElementById('submenus').style.display="none";
+         
              
     }
     
@@ -121,7 +121,7 @@ document.getElementById('submenus').style.display="none";
                  
              </div>   
              <div className="footer">   
-                    <li onClick={close}>Quick Links</li>
+                    <li>Quick Links</li>
                     <li>Events</li>
                     <li>Support</li>
                     <li>Alumini</li>
