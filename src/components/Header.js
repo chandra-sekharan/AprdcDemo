@@ -47,9 +47,8 @@ const Header =()=>{
 
        // body.style.overflow = "hidden";
         
-        var l =document.getElementById('menubox');    
-        l.style.marginTop = '0%';
-        l.style.opacity = '1';
+        var l =document.getElementsByClassName('menubox')[0];    
+        l.classList.add('active');
      
      var k = document.querySelectorAll('li') ;
       for(let i=0 ; i<=5;i++)
@@ -67,11 +66,9 @@ const Header =()=>{
     // body.style.overflow = "auto";
 
        document.getElementById('submenus').style.display="none";
-        var z =document.getElementById('menubox');    
+        var l =document.getElementsByClassName('menubox')[0];    
+        l.classList.remove('active');
 
-         z.style.marginTop = '-100%';
-         z.style.opacity = '0';
-         z.style.backgroundColor = "red";
          
          setitems(['']);
 
@@ -95,7 +92,7 @@ const Header =()=>{
             <div className="bar1"></div>
             <div className="bar1"></div>
             </div>
-            <div id="menubox">
+            <div id="menubox" className="menubox">
             <div className="header1">
             <div className="logo">
             <img src={logo} alt=""/>
