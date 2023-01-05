@@ -62,9 +62,9 @@ const Header =()=>{
 
    const close = ()=>{                                            //An event handler for main menu closing  
          
-    var body = document.getElementsByTagName('body')[0];
+   // var body = document.getElementsByTagName('body')[0];
 
-     body.style.overflow = "auto";
+    // body.style.overflow = "auto";
 
        document.getElementById('submenus').style.display="none";
         var z =document.getElementById('menubox');    
@@ -75,7 +75,7 @@ const Header =()=>{
          setitems(['']);
 
 
-         
+         alert("ok")
              
     }
     
