@@ -65,21 +65,21 @@ const Header =()=>{
 
     // body.style.overflow = "auto";
 
-       document.getElementById('submenus').style.display="none";
+       
         var m =document.getElementsByClassName('menubox')[0];    
         m.classList.remove('active');
 
          
          //setitems(['']);
 
-
+document.getElementById('submenus').style.display="none";
          //alert("ok")
              
     }
     
     
     return(
-        <div className="header" onClick={open}>
+        <div className="header" >
             <div className="logo">
             <img src={logo} alt=""/>
             <div className="logotext">
@@ -121,7 +121,7 @@ const Header =()=>{
                  
              </div>   
              <div className="footer">   
-                    <li>Quick Links</li>
+                    <li onClick={close}>Quick Links</li>
                     <li>Events</li>
                     <li>Support</li>
                     <li>Alumini</li>
