@@ -71,6 +71,7 @@ const Header =()=>{
 
          z.style.marginTop = '-100%';
          z.style.opacity = '0';
+         z.style.backgroundColor = "red";
          
          setitems(['']);
 
