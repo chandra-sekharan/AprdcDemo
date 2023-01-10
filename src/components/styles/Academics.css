@@ -160,7 +160,7 @@
 .department{
    display: flex;
    flex-wrap: wrap;
-   
+   column-gap: 40px;
 }
  
  .department .Dcard{
@@ -169,7 +169,6 @@
    box-shadow: 1px 2px 3px #000;
    background-color: #B5D5C5;
    margin: auto;
-   margin-left: 10px;
    margin-top: 30px !important;
  }
  .Dcard img{
@@ -178,4 +177,40 @@
  }
  .Dcard h3{
    text-align: center;
+ }
+
+ /***/
+
+ .achievement ul{
+   margin-left: 50px ;
+   margin-top: 50px;
+ }
+.achievement ul li{
+   margin-top: 20px;
+   font-size: 18px;
+   
+}
+.achievement ul li:nth-of-type(even){
+ 
+ background-color: #b9e0f0;  
+}
+.achievement ul li:nth-of-type(odd){
+ 
+   background-color:#91D8E4;  
+  }
+
+  /**/
+  .syllabus{
+   display: flex;
+   flex-wrap: wrap;
+   column-gap: 40px;
+}
+ 
+ .syllabus .Dcard{
+   width: 250px;
+   height: 250px;
+   box-shadow: 1px 2px 3px #000;
+   background-color: #B5D5C5;
+   margin: auto;
+   margin-top: 30px !important;
  }

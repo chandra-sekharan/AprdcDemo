@@ -1,0 +1,43 @@
+.library p{
+    margin-top: 40px;
+   margin-left: 40px;
+}
+.ncc{
+    width: 90%;
+    margin: auto;
+}
+.ncc .gallery{
+    background-color: #fff;
+
+}
+.ncc .gallery h1{
+    line-height: 80px;
+    color: #000;
+  }
+  .ncc .gallery .frame{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+  .ncc .frame .gallery_image{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    
+  }
+  
+  .ncc .frame img{
+    transition: all .4s ease-in-out;
+  }
+  .ncc .frame img:hover{
+    transform: scale(1.2);
+  }
+
+  .ncc .gallery footer{
+    height: 7vh;
+  }

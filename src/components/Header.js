@@ -28,9 +28,9 @@ const Header =()=>{
             name:"Internal complaints committee",
          },  
         ];
-    const Academics = [{id:"Programs-Offered",name:"Programs Offered",},{id:"Admissions",name:"Admissions",},{id:"Program-Outcomes",name:"Program Outcomes",},{id:"Departments",name:"Departments"},{id:"Academic-Calender",name:"Academic Calender"},{id:"Achievements",name:"Achievements"},{id:"Skill based courses",name:"Skill based courses"},{id:"Syllabus",name:"Syllabus"},];
-    const Facilities=[{id:"Hostel",name:"Hostel",},{id:"Health-Center",name:"Health Center",},{id:"RO-Water-Plant",name:"RO Water Plant",},{id:"Internet-Facility",name:"Internet Facility",},{id:"GYM",name:"GYM",},];
-    const Campus = [{id:"Library",name:"Library",},{id:"Rusa",name:"Rusa",},{id:"NCC",name:"NCC",},{id:"NSS",name:"NSS",},{id:"Placement-Cell",name:"Placement Cell",},{id:"Digital-Classroom",name:"Digital Classroom"},{id:"Laboratories",name:"Laboratories",},];
+    const Academics = [{id:"Programs-Offered",name:"Programs Offered",},{id:"Admissions",name:"Admissions",},{id:"Program-Outcomes",name:"Program Outcomes",},{id:"Departments",name:"Departments"},{id:"Academic-Calender",name:"Academic Calender"},{id:"Achievements",name:"Achievements"},{id:"Syllabus",name:"Syllabus"},];
+    const Facilities=[{id:"Hostel",name:"Hostel",},{id:"Blind-Software",name:"Blind Software",},{id:"RO-Water-Plant",name:"RO Water Plant",},{id:"Industrial-Collaboration",name:"Industrial Collaboration",},{id:"GYM",name:"GYM",},];
+    const Campus = [{id:"Library",name:"Library",},{id:"NCC",name:"NCC",},{id:"NSS",name:"NSS",},{id:"Placement-Cell",name:"Placement Cell",},{id:"Laboratories",name:"Laboratories",},];
     const Visit = [{id:"Visit-APRDC",name:"Visit APRDC"} , {id:"Maps-and-Direction",name:"Maps and Direction"},];
     const About = [{id:"History-of-APRDC",name:"History of APRDC"},{id:"List-of-succcession-of-Principals",name:"List of succcession of Principals"},{id:"College-Profile",name:"College Profile"},{id:"NIRF",name:"NIRF"},{id:"AISHE",name:"AISHE"},];
 
