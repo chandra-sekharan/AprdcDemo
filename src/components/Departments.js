@@ -1,14 +1,26 @@
 import React from "react";
 import './styles/Academics.css'
+import {Link} from 'react-router-dom'
+import Maths from './images/MathsD.jpg'
+import Physics from './images/PhysicsD.jpg'
+import Chemistry from './images/chemistryD.avif'
+import Statistics from './images/statD.jpg'
+import computer from './images/computerD.jpg'
+import commerce from './images/commerceD.png'
+import political from './images/politicalD.jpg'
+import economics from './images/EconomicsD.png'
+import history from './images/HistoryD.png'
+import english from './images/EnglishD.png'
+import telugu from './images/TeluguD.webp'
+import sanscrit from './images/SanscritD.jpg'
 
-
-const Department = ()=>{
+const Department = ({Departmentdata})=>{
 
     const Department = [
       {
         id:"Mathematics",
         name:"MATHEMATICS",
-        img:"",
+        img:Maths,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -16,7 +28,7 @@ const Department = ()=>{
       {
         id:"Physics",
         name:"PHYSICS",
-        img:"",
+        img:Physics,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -24,7 +36,7 @@ const Department = ()=>{
       {
         id:"Chemistry",
         name:"CHEMISTRY",
-        img:"",
+        img:Chemistry,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -32,7 +44,7 @@ const Department = ()=>{
       {
         id:"Statistics",
         name:"STATISTICS",
-        img:"",
+        img:Statistics,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -40,7 +52,7 @@ const Department = ()=>{
       {
         id:"Computer science",
         name:"COMPUTER SCIENCE & APPLICATIONS",
-        img:"",
+        img:computer,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -48,7 +60,7 @@ const Department = ()=>{
       {
         id:"Commerce",
         name:"COMMERCE",
-        img:"",
+        img:commerce,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -56,7 +68,7 @@ const Department = ()=>{
       {
         id:"Political science",
         name:"POLITICAL SCIENCE",
-        img:"",
+        img:political,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -64,7 +76,7 @@ const Department = ()=>{
       {
         id:"Economics",
         name:"ECONOMICS",
-        img:"",
+        img:economics,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -72,15 +84,7 @@ const Department = ()=>{
       {
         id:"History",
         name:"HISTORY",
-        img:"",
-        fac1:{},
-        fac2:{},
-        fac3:{},
-      },
-      {
-        id:"Fine arts",
-        name:"FINE ARTS",
-        img:"",
+        img:history,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -88,7 +92,7 @@ const Department = ()=>{
       {
         id:"English",
         name:"ENGLISH",
-        img:"",
+        img:english,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -96,7 +100,7 @@ const Department = ()=>{
       {
         id:"Telugu",
         name:"TELUGU",
-        img:"",
+        img:telugu,
         fac1:{},
         fac2:{},
         fac3:{},
@@ -104,19 +108,24 @@ const Department = ()=>{
       {
         id:"Sanscrit",
         name:"SANSCRIT",
-        img:"",
+        img:sanscrit,
         fac1:{},
         fac2:{},
         fac3:{},
       },
-      
-
     ]
+
+    const DepartmentR = (data) =>{
+        Departmentdata(data);
+    }
     return(
         <div className="department">
-         {Department.map(data=>
-         <h1>{data.name}</h1>
-            )}
+          {Department.map(data=>
+         <div className="Dcard">
+            <Link to="/Department"><img onClick={()=>DepartmentR(data)} src={data.img} alt=""/></Link>
+            <h3>{data.name}</h3>
+         </div>
+         )}
         </div>
     );
 }

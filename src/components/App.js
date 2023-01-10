@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter,Routes , Route } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
@@ -12,9 +12,18 @@ import Programs from './Programs';
 import Admission from './Admissions';
 import ProgramOut from './ProgramOut';
 import Department from './Departments';
+import DepartmentInfo from './DepartmentInfo';
 
 
 const App =() => {
+   
+  const [Ddata , setDdata] = useState('');
+  
+ const Departmentdata =(data)=>{
+    setDdata(data)
+ }
+
+
   return (
     <BrowserRouter>
     <div>
@@ -29,7 +38,8 @@ const App =() => {
         <Route path='/Programs-Offered' element={<Programs/>} />
         <Route path='/Admissions' element={<Admission/>} />
         <Route path='/Program-Outcomes' element={<ProgramOut/>} />
-        <Route path='/Departments' element={<Department/>} />
+        <Route path='/Departments' element={<Department Departmentdata={Departmentdata}/>} />
+        <Route path='/Department' element={<DepartmentInfo Ddata={Ddata}/>} />
        </Routes>     
     </div>
     </BrowserRouter>
