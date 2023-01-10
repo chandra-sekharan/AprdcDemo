@@ -1,0 +1,157 @@
+.programs{
+    width: 100%;
+    background-color: rgb(177, 215, 247);
+    
+    
+}
+.programs .titlepro{
+    display: flex;
+}
+.programs h2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.programs h2::after{
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    visibility: hidden;
+    background: rgb(20, 20, 20);
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+  }
+  .programs h2:hover:after{
+     visibility: visible;
+      background: rgb(14, 13, 13);
+      width:23%;
+    }
+  .programs .titlepro img{
+    width: 50px;
+    margin-top: 40px;
+    
+  }
+.program{
+    width: 240px;
+    height:40vh;
+    margin-top: 50px !important;
+    box-shadow: 1px 2px 3px #000;
+    margin-left: 50px;
+    color: #FFF;
+    background-color: #000;
+    position: relative;
+    
+    
+}
+.program .pro-item{
+    width: 240px;
+    height: 33vh;
+    background-color: #000;
+    display: flex;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    opacity: 0.5;
+}
+.program .bottom{
+    position: relative;
+    width: 240px;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 112, 77);
+}
+.bottom h4{
+    text-align: center;
+ 
+}
+.pro-item img {
+    width: 240px;
+    height: 33vh;
+    background-color: #FFF;
+    
+}
+.pro-item:hover{
+     width: 540px;
+     opacity: 1;
+ }
+
+ .pro-item .another{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px !important;
+ }
+ .another label{
+    margin-left: 20px;
+
+ }
+ .another ul{
+    margin-left: 40px;
+ }
+ .another ul li{
+    margin-left: 0px !important;
+ }
+ .another span{
+    margin-left: 20px;
+ }
+ .another li {
+    margin-left: 20px;
+ }
+ .another a{
+    margin-left: auto;
+ }
+ .another  button{
+    width: 40px;
+    height: 5vh;
+    background-color: rgb(124, 128, 128);
+    margin-left: auto !important;
+    margin-right: 10px !important;
+    margin: auto;
+    border-radius: 6px;
+    color: #FFF;
+ }
+ .another button:hover{
+    background-color: #e1e1e1;
+    color: #000;
+ }
+ 
+ .programs footer{
+    height: 10vh;
+ }
+
+
+ /*Admissions */
+ .admissions{
+   background-color: #b9e0f0;
+ }
+
+ .admission{
+    width: 90%;
+    margin: auto;
+ }
+ .admission button{
+   width: 150px;
+   height: 60px;
+   background-color: rgb(7, 160, 109);
+   border: none;
+   color: #fff;
+   border-radius: 8px;
+   box-shadow: 1px 2px 3px #000;
+ }
+ .admission button:hover{
+   background-color: rgb(5, 71, 57);
+ }
+
+ /**/
+
+ .programOut{
+     width: 100%;
+     height: 100vh;
+ }
+ .programOut iframe{
+   width: 100%;
+   height: 100%;
+ }
