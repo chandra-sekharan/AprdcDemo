@@ -1,0 +1,54 @@
+
+.principals table{
+    width: 100%;
+}
+.principals table th{
+    border: 1px solid #aaa7a7;
+}
+.principals table td{
+    border: 1px solid #c2bdbd;
+    padding: 10px;
+}
+
+
+/****/
+.college-profile{
+    background-color: #000;
+}
+.coll-profile{
+    width: 90%;
+    margin: auto;
+    
+}
+.coll-profile h1{
+    color: #fff;
+    line-height: 70px;
+}
+.coll-profile p{
+    font-size: 18px;
+    color: #fff;
+}
+/***/
+.nirf  li {
+    margin-top: 50px !important;
+    margin-left:100px;
+    font-size: 20px;
+    width: 12%;
+    
+    
+}
+.nirf a{
+  text-decoration: none;
+  color: #000;
+  
+}
+.nirf a:hover{
+   text-decoration: underline;
+ 
+}
+
+/**/
+.aishe img{
+   margin-top: 30px !important;
+   border: 1px solid black;
+}

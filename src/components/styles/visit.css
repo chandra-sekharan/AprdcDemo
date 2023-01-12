@@ -1,0 +1,39 @@
+.maps{
+    width: 100%;
+    background-color: #000;
+}
+.maps h1{
+   color:  #fff;
+   margin-left: 30px;
+   line-height: 100px;
+   text-decoration: underline;
+}
+.maps .map{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+}
+.map iframe{
+    width: 100%;
+}
+.maps footer{
+    height: 5vh;
+}
+.visitAPRDC{
+    height: 100vh;
+    background-color: #000;
+}
+.visit {
+    width: 90%;
+    margin: auto;
+    
+}
+.visit h1{
+    line-height: 80px;
+    color: #fff;
+}
+.visit p {
+    font-size: 18px;
+    color: #fff;
+}

@@ -23,6 +23,16 @@ import RO from './RO';
 import Industrial from './Industrial';
 import Library from './Library';
 import Ncc from './Ncc';
+import Nss from './Nss';
+import Placement from './Placement';
+import Laboratory from './Laboratory';
+import Maps from './Maps';
+import Visit from './Visit';
+import History from './History';
+import Principal from './Principal';
+import CollegeProfile from './CollegeProfile';
+import Nirf from './NIRF';
+import AISHE from './AISHE';
 
 
 const App =() => {
@@ -60,6 +70,16 @@ const App =() => {
         <Route path='/Industrial-Collaboration' element={<Industrial/>} />
         <Route path='/Library' element={<Library/>} />
         <Route path='/NCC' element={<Ncc/>} />
+        <Route path='/NSS' element={<Nss/>} />
+        <Route path='/Placement-Cell' element={<Placement/>} />
+        <Route path='/Laboratories' element={<Laboratory/>} />
+        <Route path='/visit-APRDC' element={<Visit/>} />
+        <Route path='/Maps-and-Direction' element={<Maps/>} />
+        <Route path='/History-of-APRDC' element={<History/>} />
+        <Route path='/List-of-succcession-of-Principals' element={<Principal/>} />
+        <Route path='/College-Profile' element={<CollegeProfile/>} />
+        <Route path='/NIRF' element={<Nirf/>} />
+        <Route path='/AISHE' element={<AISHE/>} />
        </Routes>     
     </div>
     </BrowserRouter>
