@@ -254,6 +254,11 @@ font-family: 'EB Garamond', serif;
     border-top: 1.5px solid #35393d;
     
   }
+  .footer a{
+    text-decoration: none;
+    color: inherit;
+  }
+  
 #menubox .footer li:first-child{
     display: inline-block;
     margin-left: 43px;
@@ -267,9 +272,8 @@ font-family: 'EB Garamond', serif;
     position: relative;
     top: 5px;
     }
+
 #menubox .footer li{
-  
- 
   margin-left: 40px;
   color: white;
   font-weight: bold;

@@ -33,6 +33,8 @@ import Principal from './Principal';
 import CollegeProfile from './CollegeProfile';
 import Nirf from './NIRF';
 import AISHE from './AISHE';
+import Alumini from './Alumini';
+import NAAC from './NAAC';
 
 
 const App =() => {
@@ -80,6 +82,8 @@ const App =() => {
         <Route path='/College-Profile' element={<CollegeProfile/>} />
         <Route path='/NIRF' element={<Nirf/>} />
         <Route path='/AISHE' element={<AISHE/>} />
+        <Route path='/Alumini' element={<Alumini/>} />
+        <Route path='/NAAC' element={<NAAC/>} />
        </Routes>     
     </div>
     </BrowserRouter>

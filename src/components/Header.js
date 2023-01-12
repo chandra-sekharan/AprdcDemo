@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../components/styles/header.css';
 import logo from './images/logo.png';
+import {Link} from 'react-router-dom'
 import Submenu from "./Submenu";
 
 
@@ -122,12 +123,10 @@ const Header =()=>{
              </div>   
              <div className="footer">   
                     <li>Quick Links</li>
-                    <li>Events</li>
-                    <li>Support</li>
-                    <li>Alumini</li>
-                    <li>NAAC</li>
-                    <li>Student Forum</li>
-                    <li>Contact us</li>
+                    <li onClick={()=>close()}><Link to="/" style={{ color: 'inherit', textDecoration: 'inherit'}}>Home</Link></li>
+                    <li onClick={()=>close()}><Link to="/Alumini" style={{ color: 'inherit', textDecoration: 'inherit'}}>Alumini</Link></li>
+                    <li onClick={()=>close()}><Link to="/NAAC" style={{ color: 'inherit', textDecoration: 'inherit'}}>NAAC</Link></li>
+                    <li><a href="mailto:aprdc.nagarjunasagar@gmail.com" >Contact us</a></li>
                 </div>
             </div>
         </div>

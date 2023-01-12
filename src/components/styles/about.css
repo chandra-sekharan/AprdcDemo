@@ -52,3 +52,39 @@
    margin-top: 30px !important;
    border: 1px solid black;
 }
+
+/***/
+.alumini{
+    width: 90%;
+    margin: auto;
+}
+.alumini table{
+    width: 100%;
+    border:1px solid #9b9595;
+}
+.alumini th{
+   border: 1px solid #e1e1e1;    
+}
+.alumini td{
+    border:1px solid #9b9595;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+/****/
+
+.naac button a{
+    text-decoration: none;
+    color: #fff;
+}
+.naac button{
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+}
+.naac button:hover{
+    background-color: rgb(114, 105, 105);
+}
