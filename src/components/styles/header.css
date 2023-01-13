@@ -14,11 +14,10 @@
    background-color: #e3e5e5;
 }
 .logo{
-    width: 30%;
+    width: 50%;
     margin-top: 10px;
     margin-left: 40px;
     display: flex;
-    
 }
 .logo img{
     width: 5em;
@@ -30,6 +29,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .logotext p{
@@ -56,6 +56,7 @@
   margin-left: auto !important;
   margin-top: auto;
   margin-bottom: auto;
+  z-index: 9;
   background-color: #1e1e1e;
  } 
 .bar1 {
@@ -74,10 +75,11 @@
   position:fixed;
   background-color: #0e0e0e;
   transition: all .4s ease-in-out;
-  margin-top: -100%;
+  margin-top: -150%;
   opacity: 0;
   overflow: hidden;
-  z-index: 999;
+  z-index: -100;
+  
   
 }
 .menubox.active{
@@ -89,6 +91,7 @@
   transition: all .4s ease-in-out;
   margin-top: 0%;
   opacity: 1;
+  
   overflow: hidden;
   z-index: 999;
    
@@ -122,7 +125,6 @@
   height: 97px;
   display: flex;
   border-bottom: 1px solid #1e1e1e;
-  
 }
 
 .header1 .logo{
@@ -136,6 +138,7 @@
   height: 5em;
 }
 .header1 .logotext{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +189,7 @@ font-family: 'EB Garamond', serif;
 }
 .menucontent{
   overflow-y: auto;
-  width: 26%;
+  
   overflow-x:hidden;
   
 }
@@ -206,11 +209,11 @@ font-family: 'EB Garamond', serif;
 .menucontent li{
   list-style: none;
   color: white;
-  font-size: 48px;
+  font-size: 45px;
   letter-spacing: .1px;
   margin-top: -40px;
   opacity: 0;
-  margin-left: 30px; 
+  margin-left: 20px; 
   position: relative;
   display: inline-block;
   color: #fff;
@@ -249,11 +252,19 @@ font-family: 'EB Garamond', serif;
     padding-bottom: 22.5px;
     display: flex;
     align-items: center;
+    overflow: auto;
+
     left: 0;
     bottom: 0;
     border-top: 1.5px solid #35393d;
     
   }
+ #menubox .footer::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+  display: none;
+}
   .footer a{
     text-decoration: none;
     color: inherit;

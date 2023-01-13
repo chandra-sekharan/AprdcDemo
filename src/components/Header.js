@@ -42,8 +42,8 @@ const Header =()=>{
         setitems(data);
     }
     
-    const open = () =>{                                              //An event handler for main menu opening                            
-     
+    const open = () =>{   
+                                                 //An event handler for main menu opening                            
         var body = document.getElementsByTagName('body')[0];
 
         body.style.overflow = "hidden";
@@ -88,7 +88,7 @@ const Header =()=>{
             <span>Residential Degree College</span>
             </div>
             </div>
-            <div className="menu" onClick={open}>
+            <div className="menu" onClick={()=>open()}>
             <div className="bar1"></div>
             <div className="bar1"></div>
             <div className="bar1"></div>

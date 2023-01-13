@@ -119,20 +119,20 @@ const Home = ()=>{
             id:1,
             src:gallery10,
             title:"National Cadet Corps",
-            desc:"NCC Unit Starting Date: September, 1984.  139 Coy 25(A) Bn N.C.C  NCC Officer: Lt D Vijaya Kumar",
+            desc:"NCC Unit Starting Date: September, 1984.  139 Coy 25(A) Bn N.C.C  NCC Officer: Captain D.Vijaya Kumar",
 
         },
         {
             id:2,
             src:sports,
             title:"Sports",
-            desc:"Lorium ipsem is a dummy text used for random purpose it is used by developers for dummy content",
+            desc:"The college is equipped with a Gym. Sports facilities such as Table-Tennis, shuttle etc.",
         },
         {
             id:3,
             src:nss,
             title:"National Service Scheme",
-            desc:"Lorium ipsem is a dummy text used for random purpose it is used by developers for dummy content",
+            desc:"The National Service Scheme (NSS) is a Central Sector Scheme of Government of India.",
         },
     ]
  const lab = [
@@ -140,13 +140,13 @@ const Home = ()=>{
         id:1,
         src:physics,
         title:"Physics Laboratory",
-        desc:"Lorium ipsem is a dummy text used for random purpose it is used by developers for dummy content",
+        desc:"The Physics Laboratory practical contains comprehensive hands-on practice of laboratory experiments.",
     },
     {
         id:2,
         src:chemistry,
         title:"Chemistry Laboratory",
-        desc:"Lorium ipsem is a dummy text used for random purpose it is used by developers for dummy content",
+        desc:"The Chemistry Laboratory practical contains comprehensive hands-on practice of laboratory experiments.",
     },
     {
         id:3,
@@ -195,38 +195,37 @@ const Home = ()=>{
             
         </div>
         <div className="homesection" id="homesection" >
-        
-        <div className="events" >
         <h1>Happenings in APRDC</h1>
-            {Moments.map(data =>
+        <div className="events" >
+        {Moments.map(data =>
             <div className="event">
               <div className="image">
                 <img src={data.src} alt="ncc" />
               </div>
-              <h2>{data.title}</h2>
-              <h6>{data.desc}</h6>
-              <img src={arrowleft} alt="" id="more" /><span>Visit For More</span>
+              <h2>{data.title}</h2><br></br>
+              <h6>{data.desc}</h6>             
+              <footer></footer>
             </div>
             )}
             <footer></footer>
             </div> 
             <div className="labs">
-            
-            <div className="events">
-            <h1>HANDS-ON LAB</h1>    
+            <h1>HANDS-ON LAB</h1>   
+            <div className="events">  
                 {lab.map(data=>
                 <div className="event">
                    <div className="image">
                     <img src={data.src} alt="" />
                    </div>
-                  <h2>{data.title}</h2>
+                  <h2>{data.title}</h2><br></br>
                   <h6>{data.desc}</h6>
-                  <img src={arrowleft} alt="" id="more" /><span>Visit For More</span>
+                  <footer></footer>
                 </div>
                )}
                <footer></footer>
             </div>
             </div>
+            
             <div className="gallery">
               <center><h1>Gallery</h1></center>
               <div className="frame">
@@ -239,7 +238,7 @@ const Home = ()=>{
               <footer></footer>
             </div>
             <div className="footer_end">
-               <center><img className="end" src={logo} alt="" /></center>
+               <br></br><center><img className="end" src={logo} alt="" /></center>
                <div className="end_credits">
                 <ul>
                <li>Privacy Policy</li>
