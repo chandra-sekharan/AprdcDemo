@@ -1,4 +1,10 @@
 
+.history{
+    width: 90%;
+    margin: auto;
+    line-height: 40px;
+}
+
 .principals table{
     width: 100%;
 }

@@ -58,6 +58,7 @@
     font-family: 'EB Garamond', serif;
     
   }
+  
   .homesection h1{
       width: 90%;
       height: 45px;
@@ -106,7 +107,7 @@
     font-size: 20px;
     width: 100%;
     font-weight: bold;
-    padding-left: 7px;
+    padding-left: 13px;
   }
   .event h2::after{
     content: '';
