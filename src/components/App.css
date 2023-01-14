@@ -1,9 +1,140 @@
+/*mobile */
+@media screen and (max-device-width: 640px) {
+   .header{
+      background-color: #000 !important;
+      height: 70px !important;
+   }
+   
+   .header .logo img{
+      width: 40px;
+      height: 50px;
+      margin-left:-20px;
+   }
+   .header .logotext{
+      width: 100%;
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center;
+      margin-top: -8.8px;
+   }
+   .header .logotext p{
+      font-size: 15px;
+      margin: 0px !important;
+      color: #fff;
+   }
+   .header .logotext span{
+      font-size: 15px ;
+      color: #fff;
+   }
+   .header .menu{
+      height: 65px;
+      background-color: #000;
+   }
+   .header .menu .bar1{
+      width: 35px;
+      height: 5px;
+   }
+   .header .menu .bar1:nth-child(2){
+      display: none;
+   }
+   .Home .homepage h1{
+      font-size: 27px ;
+   }
+   .homesection h1{
+      margin: 0px !important;
+      margin-left: 15px !important;
+      margin-top: 5px !important;
+      margin-bottom: 18px !important;
+   }
+   .events .event{
+      width: 350px !important;
+   }
+    /****/
+    .menubox .header1{
+      height: 70px !important;
+   }
+   .menubox .header1 .logo{
+      width: 100%;
+      display: flex;
+   }
+   .menubox .header1 .logo img{
+      width: 40px !important;
+      height: 50px !important;
+      margin-left:-5px !important;
+      margin-top: -6px !important;
+   }
+   .menubox .header1  .logotext{
+      display: flex !important;
+      flex-wrap: wrap !important;
+      justify-content: center;
+      margin-top: -8.8px;
+   }
+   .menubox .header1 .logotext p{
+      font-size: 15px;
+      margin: 0px !important;
+      color: #fff;
+   }
+   .menubox .header1 .logotext label{
+      font-size: 15px ;
+      color: #fff;
+   }
+   .menubox .close{
+      width: 40%;
+      margin-left: auto !important;
+      display: flex !important;
+      justify-content: center;
+      column-gap: 4px;
+      margin: 0px !important;
+   }
+   .menubox .close label{
+     margin: 0px !important;
+     
+   }
+   .menubox .close span{
+      width: 20px;
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: center !important;
+      margin: 0px !important;
+      padding: 2px;
+   }
+   .menubox .menucontent ul {
+       display: grid ;
+     
+   }
+   .menubox .menucontent ul li{
+      
+      font-size:28px;
+   }
+   .submenu{
+     
+      position: relative !important;
+     
+   }
+   .submenu ul {
+      border-left: 1px solid #fff;
+      width: 200px !important;
+   }
+   .submenu ul li{
+      font-size: 15px;
+      margin-left: 7px !important;
+      margin-top: 0px !important;
+  }  
+  .menubox .footer li{
+   margin: 5.5px !important;
+  }
+  .menubox .footer li:first-child::after{
+      margin-left: -5px !important;
+  }
+ }
 
 
 
-
+/*large*/
 @media screen and (min-width: 705px) and (max-width: 1078){
- 
+ body{
+   background-color: red;
+ }
  .header .logo img{
     width: 8em;
     height: 8em;
