@@ -82,7 +82,7 @@ const Header =()=>{
     return(
         <div className="header" >
             <div className="logo">
-            <img src={logo} alt=""/>
+            <Link to="/"><img src={logo} alt=""/></Link>
             <div className="logotext">
             <p>ANDHRA PRADESH</p>
             <span>Residential Degree College</span>
