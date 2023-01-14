@@ -12,6 +12,7 @@ Present : Sri Y.N.S.Chaudhary</h2><br></br><br></br>
 activities for the year 2020-21.The following is the list of committees slightly reconstituted as per NAAC & other
 requirements for organizing the various Curricular,Co-Curricular and other activities for the
 Academic Year 2020-21.</p>
+<div className="committeeTable">
         <table>
             <tr>
                 <th>SI.No</th>
@@ -311,6 +312,7 @@ Academic Year 2020-21.</p>
 5. Sri P.Rama Krishna, PD</td>
             </tr>
         </table>
+        </div>
         </div>
         <footer></footer>
         </div>

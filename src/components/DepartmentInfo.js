@@ -10,6 +10,7 @@ const DepartmentInfo = ({Ddata})=>{
             <div className="faculty">
         <h1>DEPARTMENT OF {Ddata.name}</h1><br></br><br></br>
          <h3>Our Faculty</h3><br></br><br></br>
+         <div className="departmentFAC">
          <table>
             <tr>
                 <th>Name of the Employee</th>
@@ -29,6 +30,7 @@ const DepartmentInfo = ({Ddata})=>{
             )}
 
          </table>
+         </div>
         </div>
             
         </div>

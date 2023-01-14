@@ -34,6 +34,7 @@
     justify-content: center;
     margin-left: 40px;
     margin-top: 50px;
+    
 }
 
 .dis{
@@ -53,6 +54,7 @@
     text-align: center;
     letter-spacing: 2px ;
     background-color: #FED049;
+    
 }
 .visionMission p{
     margin-top: 40px;
@@ -63,12 +65,14 @@
 .visionMission li{
     list-style:decimal;
     margin-top: 10px;
+    
 }
 .staff h3{
     margin-top: 50px;
     margin-left: 50px;
     color: red;
     font-size: 25px;
+    
 }
 .Employees{
     width: 90%; 

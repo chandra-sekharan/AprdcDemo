@@ -52,7 +52,7 @@
     display: flex;
     overflow: hidden;
     transition: all .5s ease-in-out;
-    opacity: 0.5;
+    opacity: 1;
 }
 .program .bottom{
     position: relative;
@@ -63,28 +63,30 @@
     justify-content: center;
     background-color: rgb(7, 112, 77);
 }
+
 .bottom h4{
     text-align: center;
  
 }
+
 .pro-item img {
     width: 240px;
     height: 33vh;
     background-color: #FFF;
-    
+    z-index: 99;   
 }
 .pro-item:hover{
      width: 540px;
      opacity: 1;
  }
 
- .pro-item .another{
+ .pro-item .another, .another1{
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 10px !important;
  }
- .another label{
+ .another  label{
     margin-left: 20px;
 
  }
@@ -118,6 +120,50 @@
     color: #000;
  }
  
+ .program .another1{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px !important;
+   position: absolute;
+}
+.another1  label{
+   margin-left: 20px;
+
+}
+.another1 ul{
+   margin-left: 40px;
+}
+.another1 ul li{
+   margin-left: 0px !important;
+}
+.another1 span{
+   margin-left: 20px;
+}
+.another1 li {
+   margin-left: 20px;
+}
+.another1 a{
+   margin-left: auto;
+}
+.another1  button{
+   width: 40px;
+   height: 5vh;
+   background-color: rgb(124, 128, 128);
+   margin-left: auto !important;
+   margin-right: 10px !important;
+   margin: auto;
+   border-radius: 6px;
+   color: #FFF;
+}
+.another1 button:hover{
+   background-color: #e1e1e1;
+   color: #000;
+}
+
+
+
+
  .programs footer{
     height: 10vh;
  }
@@ -190,14 +236,7 @@
    font-size: 18px;
    
 }
-.achievement ul li:nth-of-type(even){
- 
- background-color: #b9e0f0;  
-}
-.achievement ul li:nth-of-type(odd){
- 
-   background-color:#91D8E4;  
-  }
+
 
   /**/
   .syllabus{

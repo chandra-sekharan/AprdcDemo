@@ -50,6 +50,7 @@
       width: 350px !important;
    }
     /****/
+    
     .menubox .header1{
       height: 70px !important;
    }
@@ -92,6 +93,7 @@
    }
    .menubox .close span{
       width: 20px;
+      height: 20px;
       display: flex !important;
       flex-wrap: wrap;
       justify-content: center !important;
@@ -100,14 +102,18 @@
    }
    .menubox .menucontent ul {
        display: grid ;
-     
+       margin-left: 1px;
+       
    }
+   
    .menubox .menucontent ul li{
       
       font-size:28px;
    }
+   
    .submenu{
-     
+      
+      left: 5px;
       position: relative !important;
      
    }
@@ -126,6 +132,82 @@
   .menubox .footer li:first-child::after{
       margin-left: -5px !important;
   }
+  /*Home page done*/
+  .principal{
+   display: grid !important;
+  }
+  .principal img{
+     width: 150px !important;
+     height: 200px !important;
+  }
+  .principal .detail{
+   width: 90%;   
+   margin-left: 0px !important;
+  }
+  .principal .detail h1{
+    margin-top: -40px;
+    margin-left: 25px;
+  }
+  .principal .detail h2{
+   margin-left: 20px !important;
+  }
+   .Employees {
+     width: 100% !important;
+     margin: 0px !important;
+     overflow-x:auto ;
+  }
+/**/
+ .committees h2{
+   width: 100% !important;
+ }
+  .committeesMain .committeeTable{
+   width: 100%;
+   overflow-x: auto;
+
+}
+/**/
+
+.faculty h1{
+   width: 100% !important;
+}
+.faculty .facultytable {
+   overflow-x: auto;
+}
+/**/
+.nontec h1{
+  width: 100% !important;
+}
+.nonteaching {
+   overflow-x: auto;
+}
+/**/
+.internal h1 , h2{
+   width: 100% !important;
+}
+/***/
+.program .pro-item{
+   opacity: 1 !important;
+   
+}
+
+.program .pro-item:hover {
+   width: 0px !important;  
+ 
+}
+/***/
+ .departmentFAC{
+   overflow-x: auto !important;
+ }
+ .maps .map{
+   width: 360px !important;
+ }
+ .principals{
+   overflow-x: auto;
+ }
+ .nirf ul li{
+   width:100px;
+   
+ }
  }
 
 

@@ -1,9 +1,9 @@
 .maps{
     width: 100%;
-    background-color: #000;
+    
 }
 .maps h1{
-   color:  #fff;
+   color:  #000;
    margin-left: 30px;
    line-height: 100px;
    text-decoration: underline;
@@ -20,10 +20,7 @@
 .maps footer{
     height: 5vh;
 }
-.visitAPRDC{
-    height: 100vh;
-    background-color: #000;
-}
+
 .visit {
     width: 90%;
     margin: auto;
@@ -31,9 +28,9 @@
 }
 .visit h1{
     line-height: 80px;
-    color: #fff;
+    color: #000;
 }
 .visit p {
     font-size: 18px;
-    color: #fff;
+    color: #000;
 }

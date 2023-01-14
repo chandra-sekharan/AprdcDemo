@@ -247,7 +247,7 @@ const Teaching =()=>{
         <div className="faculty">
         <h1>A.P.RESIDENTIAL DEGREE COLLEGE, NAGARJUNASAGAR
 TEACHING STAFF PARTICULARS</h1><br></br><br></br>
-
+       <div className="facultytable">
          <table>
             <tr>
                 <th>Name of the Employee</th>
@@ -267,6 +267,7 @@ TEACHING STAFF PARTICULARS</h1><br></br><br></br>
             )}
 
          </table>
+         </div>
         </div>
         </>
     );
