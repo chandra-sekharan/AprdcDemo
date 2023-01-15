@@ -1,0 +1,29 @@
+.loadersection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.loaderCard{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: rotate .6s linear infinite;
+}
+.loaderCard img{
+    width: 80px;
+    height: 80px;
+    
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotateY(360deg);
+    }
+
+}
