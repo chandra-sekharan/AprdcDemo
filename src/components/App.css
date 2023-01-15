@@ -2,12 +2,12 @@
 @media screen and (max-device-width: 640px) {
    body{
       -webkit-touch-callout:none;
--webkit-user-select:none;
--khtml-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
-user-select:none;
--webkit-tap-highlight-color:rgba(0,0,0,0);
+      -webkit-user-select:none;
+      -khtml-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+      -webkit-tap-highlight-color:rgba(0,0,0,0);
    }
    .header{
       background-color: #000 !important;
@@ -164,7 +164,8 @@ user-select:none;
     margin-left: 25px;
   }
   .principal .detail h2{
-   width: 100% !important;
+   width: 90% !important;
+   margin: auto;
   }
    .Employees {
      width: 100% !important;
