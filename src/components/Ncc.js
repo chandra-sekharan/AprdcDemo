@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Campus.css'
 import ncc from './images/gallery10.jpeg'
 import ncc1 from './images/ncc1.jpg'
@@ -6,8 +6,21 @@ import ncc2 from './images/ncc2.jpg'
 import ncc3 from './images/ncc3.jpg'
 import ncc4 from './images/ncc4.jpg'
 import ncc5 from './images/ncc5.jpg'
+import Loader from "./Loader";
 
 const Ncc = ()=>{
+
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+        
 
     const photos = [
         {
@@ -45,6 +58,8 @@ const Ncc = ()=>{
     ]
 
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="ncc">
            <br></br><br></br><center><h1>N.C.C</h1></center><br></br><br></br>
            <b>NCC Unit Starting Date: September, 1984.  139 Coy 25(A) Bn N.C.C</b><br></br><br></br>
@@ -86,6 +101,7 @@ const Ncc = ()=>{
               <footer></footer>
             </div>
         </div>
+        }</>
     )
 }
 export default Ncc

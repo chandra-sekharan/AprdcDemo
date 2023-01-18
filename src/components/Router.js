@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import { BrowserRouter,Routes , Route } from 'react-router-dom';
 import './styles/App.css';
 import Home from './Home';
@@ -41,12 +41,14 @@ const Router =() => {
    
   const [Ddata , setDdata] = useState('');
 
+   
 
  const Departmentdata =(data)=>{
     setDdata(data)
  }
 
   return (
+    <>
     
     <BrowserRouter>
     <div>
@@ -90,7 +92,7 @@ const Router =() => {
     </div>
   
     </BrowserRouter>
-    
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Academics.css'
 import Maths from './images/MathsD.jpg'
 import Physics from './images/PhysicsD.jpg'
@@ -21,15 +21,29 @@ import Commerce from './images/BCOM.pdf'
 import Political from './images/POLITICAL.pdf'
 import Economics from './images/ECONOMICS.pdf'
 import History from './images/BAHISTORY.pdf'
+import Loader from "./Loader";
 
 
 
 const Syllabus = ()=>{
+ 
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+       
 
     const images = [{id:Maths , name:"MATHEMATICS",pdf:maths},{id:Physics,name:"PHYSICS",pdf:physics},{id:Chemistry,name:"CHEMISTRY",pdf:chemistry},{id:Statistics,name:"STATISTICS",pdf:statistics},{id:computer,name:"COMPUTER SCIENCE",pdf:Computer},{id:commerce,name:"COMMERCE",pdf:Commerce,},{id:political,name:"POLITICAL",pdf:Political},{id:economics,name:"ECONOMICS",pdf:Economics},{id:history,name:"HISTORY",pdf:History},{id:english,name:"ENGLISH",},{id:telugu,name:"TELUGU",},{id:sanscrit,name:"SANSCRIT",}]
     
     console.log(images)
     return(
+        <>{loading ? <Loader/>:
         <div className="syllabus">
          {images.map(data=>
           <div className="Dcard">
@@ -38,6 +52,7 @@ const Syllabus = ()=>{
          </div>
          )}
         </div>
+        }</>
     );
 }
 

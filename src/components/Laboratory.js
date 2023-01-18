@@ -1,11 +1,27 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Campus.css'
 import physics from './images/physics.PNG'
 import chemistry from './images/chemistry.jpeg'
 import computer from './images/gallery9.jpeg'
+import Loader from "./Loader";
 
 const Laboratory = ()=>{
+
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+       
+
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="laboratory">
             <div className="labsection">
             <h1>Physics Laboratory</h1><br></br>
@@ -50,6 +66,7 @@ const Laboratory = ()=>{
                     
             </div>
         </div>
+      }</>
     )
 }
 

@@ -1,11 +1,27 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import college from './images/college.jpg'
 import principal from './images/principal.jpg';
 import Basha from './images/Basha.jpg';
 import './styles/Administration.css';
+import Loader from "./Loader";
 
 const Administration = ()=>{
+
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },2000)
+      },[])
+       
+
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="administration">
             <div className="clg_img">
                 <img src={college} alt="" />
@@ -61,7 +77,8 @@ const Administration = ()=>{
              </div>
             </div>
         </div>
-        
+    }
+    </>
     );
 }
 

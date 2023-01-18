@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Academics.css'
 import {Link} from 'react-router-dom'
 import Maths from './images/MathsD.jpg'
@@ -14,8 +14,21 @@ import english from './images/EnglishD.png'
 import telugu from './images/TeluguD.webp'
 import sanscrit from './images/SanscritD.jpg'
 import photo from './images/logo.png'
+import Loader from "./Loader";
 
 const Department = ({Departmentdata})=>{
+
+  const [loading , setLoading] = useState(true)
+  
+  useEffect(()=>{
+
+      setLoading(true);   
+   
+     setTimeout(()=>{
+       setLoading(false)
+     },1200)
+    },[])
+     
 
     const Department = [
       {
@@ -300,6 +313,7 @@ const Department = ({Departmentdata})=>{
         Departmentdata(data);
     }
     return(
+      <>{loading ? <Loader/> :
         <div className="department">
           {Department.map(data=>
          <div className="Dcard">
@@ -308,6 +322,7 @@ const Department = ({Departmentdata})=>{
          </div>
          )}
         </div>
+      }</>
     );
 }
 

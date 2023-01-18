@@ -1,8 +1,23 @@
-import React from "react";
-
+import React,{useState,useEffect} from "react";
+import Loader from "./Loader";
 
 const Internal = ()  =>{
+
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+       
+
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="internalMain">
         <div className="internal">
         <h1> Government of Andhra Pradesh PROCEEDINGS OF THE SECRETARY, APREI SOCIETY®, GUNTUR. Present: – Sri R. Narasimha Rao</h1><br></br>
@@ -139,6 +154,8 @@ SECRETARY</span></p>
 <footer></footer>
         </div>
         </div>
+        }
+        </>
     );
 }
 

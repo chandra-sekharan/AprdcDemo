@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Administration.css';
 import college from './images/college.jpg';
+import Loader from "./Loader";
 
 const Nonteaching = ()=>{
+
+  const [loading , setLoading] = useState(true)
+  
+  useEffect(()=>{
+
+      setLoading(true);   
+   
+     setTimeout(()=>{
+       setLoading(false)
+     },1200)
+    },[])
+     
 
    const Nonteaching = [ 
         [1,"A.SUDHA RANI ","Fulltime Staff Nurse", 8985898148  ],
@@ -41,6 +54,8 @@ const Nonteaching = ()=>{
       
 
     return(
+      <>
+      {loading ? <Loader/> :
         <div className="nontec">
           <div className="clg_img">
             <img src={college} alt="" />
@@ -65,6 +80,8 @@ const Nonteaching = ()=>{
             </table>
           </div>
         </div>
+        }
+        </>
     )
 }
 

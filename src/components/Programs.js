@@ -1,26 +1,39 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Academics.css';
 import Mpc from './images/BscMpc.jpg';
 import Mscs from './images/bscMscs.jpg';
 import BA from './images/BA.webp';
 import BCOM from './images/BCOM.jpg';
 import APSSDC from './images/Apssdc.jpg';
-import arrow from './images/arrowleft.png'
 import MSPDF from './images/BSCCOMPUTERS.pdf'
 import MPPDF from './images/BSCMATHS.pdf'
 import BAPDF from './images/BAHISTORY.pdf'
 import BCOMPDF from './images/BCOM.pdf'
+import Loader from "./Loader";
 
 
 const Programs = ()=>{
 
+    const [loading , setLoading] = useState(true)
+  
+  useEffect(()=>{
+
+      setLoading(true);   
+   
+     setTimeout(()=>{
+       setLoading(false)
+     },1200)
+    },[])
+     
     
 
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="programs">
             <div className="titlepro">
             <h2>PROGRAMS OFFERED </h2>
-            <img src={arrow} alt="" />
+            
             </div>
         <div className="program">
         <div className="another1">
@@ -34,7 +47,7 @@ const Programs = ()=>{
                     <li>36 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={MSPDF} target="_blank"><button>↓</button></a>
+                    <a href={MSPDF} target="_blank" rel="noreferrer" ><button>↓</button></a>
                 </div>
             <div className="pro-item" >
                 <img src={Mpc} alt="" />
@@ -49,7 +62,7 @@ const Programs = ()=>{
                     <li>36 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={MSPDF} target="_blank"><button>↓</button></a>
+                    <a href={MSPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
             </div>
             <div className="bottom">
@@ -68,7 +81,7 @@ const Programs = ()=>{
                     <li>36 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={MPPDF} target="_blank"><button>↓</button></a>
+                    <a href={MPPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
         <div className="pro-item">
                 <img src={Mscs} alt="" />
@@ -83,7 +96,7 @@ const Programs = ()=>{
                     <li>36 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={MPPDF} target="_blank"><button>↓</button></a>
+                    <a href={MPPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
             </div>
             <div className="bottom">
@@ -102,7 +115,7 @@ const Programs = ()=>{
                     <li>40 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={BAPDF} target="_blank"><button>↓</button></a>
+                    <a href={BAPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
         <div className="pro-item">
                 <img src={BA} alt="" />
@@ -117,7 +130,7 @@ const Programs = ()=>{
                     <li>40 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={BAPDF} target="_blank"><button>↓</button></a>
+                    <a href={BAPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
             </div>
             <div className="bottom">
@@ -137,7 +150,7 @@ const Programs = ()=>{
                     <li>40 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={BCOMPDF} target="_blank"><button>↓</button></a>
+                    <a href={BCOMPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
         <div className="pro-item">
                 <img src={BCOM} alt="" />
@@ -152,7 +165,7 @@ const Programs = ()=>{
                     <li>40 Seats</li>
                     <span>Pattern</span>
                     <li>CBCS</li>
-                    <a href={BCOMPDF} target="_blank"><button>↓</button></a>
+                    <a href={BCOMPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
             </div>
             <div className="bottom">
@@ -171,7 +184,7 @@ const Programs = ()=>{
                     <span>Availability</span>
                     <li>For ALL</li>
                     
-                    <a href={MSPDF} target="_blank"><button>↓</button></a>
+                    <a href={MSPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
         <div className="pro-item">
                 <img src={APSSDC} id="apssdc" alt="" />
@@ -185,7 +198,7 @@ const Programs = ()=>{
                     <span>Availability</span>
                     <li>For ALL</li>
                     
-                    <a href={MSPDF} target="_blank"><button>↓</button></a>
+                    <a href={MSPDF} target="_blank" rel="noreferrer"><button>↓</button></a>
                 </div>
             </div>
             <div className="bottom">
@@ -194,6 +207,8 @@ const Programs = ()=>{
           </div>
           <footer></footer>
         </div>
+        }
+        </>
     );
 }
 

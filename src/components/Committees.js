@@ -1,7 +1,23 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
+import Loader from "./Loader";
 
 const Committees =()=>{
+
+    const [loading , setLoading] = useState(true)
+  
+  useEffect(()=>{
+
+      setLoading(true);   
+   
+     setTimeout(()=>{
+       setLoading(false)
+     },1200)
+    },[])
+     
+
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="committeesMain">
         <div className="committees">
             <h2>PROCEEDINGS OF THE PRINCIPAL :: A.P.RESIDENTIAL DEGREE COLLEGE::
@@ -316,6 +332,8 @@ Academic Year 2020-21.</p>
         </div>
         <footer></footer>
         </div>
+        }
+        </>
     );
 }
 

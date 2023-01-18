@@ -1,11 +1,26 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
+import Loader from "./Loader";
 import './styles/Academics.css'
 
 
 const DepartmentInfo = ({Ddata})=>{
 
+    const [loading , setLoading] = useState(true)
+  
+  useEffect(()=>{
+
+      setLoading(true);   
+   
+     setTimeout(()=>{
+       setLoading(false)
+     },1200)
+    },[])
+     
+
     console.log(Ddata)
     return(
+        <>
+        {loading ? <Loader/>:
         <div>
             <div className="faculty">
         <h1>DEPARTMENT OF {Ddata.name}</h1><br></br><br></br>
@@ -34,6 +49,7 @@ const DepartmentInfo = ({Ddata})=>{
         </div>
             
         </div>
+      }</>
     );
 }
 

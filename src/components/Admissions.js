@@ -1,11 +1,25 @@
-import React from "react";
+import React , {useState,useEffect} from "react";
+import Loader from "./Loader";
 import './styles/Academics.css'
 
 
-
-
 const Admission = () =>{
+
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+       
+
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="admissions">
         <div className="admission">
         <center><h1>Admission Criteria and Entrance Examination</h1></center>
@@ -95,9 +109,11 @@ The candidate should have passed the qualifying examination in English Medium or
 After the merit list is finalized an “Intimation Letter” will be sent to the candidate and he has to come and take the admission within the stipulated time and date. At the time of admission the candidate has to submit.<br></br><br></br>
 
 All the Original Certificates: SSC, Inter, TC Conduct Community, Income, NCC/PH/Games, Selection Memo Undertakings by the Student and Parent<br></br><br></br>
-<center><a href="https://aprs.apcfss.in/" target="_blank"><button>APPLY HERE</button></a></center><br></br><br></br>
+<center><a href="https://aprs.apcfss.in/" target="_blank" rel="noreferrer"><button>APPLY HERE</button></a></center><br></br><br></br>
         </div>
         </div>
+        }
+       </>
     );
 }
 

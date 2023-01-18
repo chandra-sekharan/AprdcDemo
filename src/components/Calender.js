@@ -1,11 +1,27 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import calender from './images/calender.pdf'
+import Loader from "./Loader";
 
 const Calender = ()=>{
+  
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+       
+
     return(
+        <>{loading ? <Loader/>: 
         <div className="programOut">
-        <iframe src={calender} frameBorder="0" scrolling="auto" ></iframe>
+        <iframe title="Academic calender" src={calender} frameBorder="0" scrolling="auto" ></iframe>
         </div>
+        }</>
     )
 }
 

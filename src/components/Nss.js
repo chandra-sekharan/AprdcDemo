@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import './styles/Campus.css'
 import nss from './images/nss.jpg'
 import nss1 from './images/nss1.jpeg'
@@ -6,8 +6,21 @@ import nss2 from './images/nss2.jpeg'
 import ncc3 from './images/ncc3.jpg'
 import ncc4 from './images/ncc4.jpg'
 import ncc5 from './images/ncc5.jpg'
+import Loader from "./Loader";
 
 const Nss = ()=>{
+
+    const [loading , setLoading] = useState(true)
+  
+    useEffect(()=>{
+  
+        setLoading(true);   
+     
+       setTimeout(()=>{
+         setLoading(false)
+       },1200)
+      },[])
+       
 
     const photos = [
         {
@@ -45,6 +58,8 @@ const Nss = ()=>{
     ]
 
     return(
+        <>
+        {loading ? <Loader/> :
         <div className="nss">
            <br></br><br></br><center><h1>N.S.S</h1></center><br></br><br></br>
            
@@ -72,6 +87,7 @@ const Nss = ()=>{
               <footer></footer>
             </div>
         </div>
+        }</>
     )
 }
 export default Nss

@@ -1,7 +1,20 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import photo from './images/logo.png'
+import Loader from "./Loader";
 
 const Teaching =()=>{
+
+    const [loading , setLoading] = useState(true)
+  
+  useEffect(()=>{
+
+      setLoading(true);   
+   
+     setTimeout(()=>{
+       setLoading(false)
+     },1200)
+    },[])
+     
 
     const Faculty = [
         [
@@ -244,6 +257,7 @@ const Teaching =()=>{
     
     return(
         <>
+        {loading ? <Loader/> :
         <div className="faculty">
         <h1>A.P.RESIDENTIAL DEGREE COLLEGE, NAGARJUNASAGAR
 TEACHING STAFF PARTICULARS</h1><br></br><br></br>
@@ -269,6 +283,7 @@ TEACHING STAFF PARTICULARS</h1><br></br><br></br>
          </table>
          </div>
         </div>
+        }
         </>
     );
 }
