@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState,useEffect} from 'react';
 import { BrowserRouter,Routes , Route } from 'react-router-dom';
 import './styles/App.css';
 import Home from './Home';
@@ -39,12 +39,28 @@ import NAAC from './NAAC';
 
 const Router =() => {
    
-  const [Ddata , setDdata] = useState('');
+  const [Ddata , setDdata] = useState([]);
 
    
+  const savetolocal = (items) =>{
+    localStorage.setItem('DepartmentInfo' , JSON.stringify(items));       
+  }
+
+
+  useEffect(()=>{
+    const Depart = localStorage.getItem('DepartmentInfo');
+    if(Depart){
+      setDdata(JSON.parse(Depart));
+    }
+    else{
+      setDdata([]);
+    }
+  },[])
+
 
  const Departmentdata =(data)=>{
     setDdata(data)
+    savetolocal(data)
  }
 
   return (
