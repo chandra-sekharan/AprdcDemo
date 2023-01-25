@@ -35,6 +35,8 @@ import Nirf from './NIRF';
 import AISHE from './AISHE';
 import Alumini from './Alumini';
 import NAAC from './NAAC';
+import Register from './Register';
+import Find from './Find';
 
 
 const Router =() => {
@@ -103,6 +105,8 @@ const Router =() => {
         <Route path='/AISHE' element={<AISHE/>} />
         <Route path='/Alumini' element={<Alumini/>} />
         <Route path='/NAAC' element={<NAAC/>} />
+        <Route path='/register' element={<Register/>} />
+        <Route path='/find' element={<Find/>} />
        </Routes>    
         
     </div>
