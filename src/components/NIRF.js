@@ -1,10 +1,10 @@
 import React from "react";
 import './styles/about.css'
-import nirf2017 from './images/NIRF-2017.pdf'
-import nirf2018 from './images/NIRF-2018.pdf'
-import nirf2019 from './images/NIRF-2019.pdf'
-import nirf2020 from './images/NIRF-2020.pdf'
-import nirf2021 from './images/NIRF-2021.pdf'
+import nirf2017 from './pdf/NIRF-2017.pdf'
+import nirf2018 from './pdf/NIRF-2018.pdf'
+import nirf2019 from './pdf/NIRF-2019.pdf'
+import nirf2020 from './pdf/NIRF-2020.pdf'
+import nirf2021 from './pdf/NIRF-2021.pdf'
 const Nirf = ()=>{
     return(
         <div className="nirf">

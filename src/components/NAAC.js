@@ -3,8 +3,8 @@ import './styles/about.css'
 import Naac from './images/NAAC.jpg'
 import Naac1 from './images/NAAC1.jpg'
 import ModalImage from 'react-modal-image'
-import NAACPetition from './images/NAAC-Challenge-Petition.pdf'
-import NAACSSR from './images/NAAC-SSR-cycle.pdf'
+import NAACPetition from './pdf/NAAC-Challenge-Petition.pdf'
+import NAACSSR from './pdf/NAAC-SSR-cycle.pdf'
 import Loader from "./Loader";
 
 const NAAC = () =>{

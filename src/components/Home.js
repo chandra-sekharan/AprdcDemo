@@ -1,15 +1,13 @@
 import React from "react";
 import './styles/Home.css';
 import Carousel from 'better-react-carousel'
-
 import ncc from './images/ncc.jpg'
 import sports from './images/sports.jpg'
-import nss from './images/nss.jpg'
+import nss from './images/nss4.jpeg'
 import physics from './images/physics.PNG'
 import chemistry from './images/chemistry.jpeg';
-import college from './images/college.jpg'
+import college from './images/gallery19.jpeg'
 import logo from './images/logo1.jpg'
-import winter from './images/winter.jpg';
 import swayam from './images/swayam.png'
 import nlist from './images/nlist.png'
 import Anu from './images/Anu.png'
@@ -17,16 +15,22 @@ import Apssdc from './images/apsdc.png'
 import innovation from './images/innovation.png'
 import edx from './images/edx.png'
 import double from './images/double.png'
-import gallery1 from './images/gallery1.jpg';
+import gallery1 from './images/gallery18.jpg';
 import gallery2 from './images/gallery2.jpg';
+import gallery11 from './images/gallery11.jpeg';
 import gallery3 from './images/gallery3.jpg';
 import gallery4 from './images/gallery4.jpg';
 import gallery5 from './images/gallery5.jpeg';
 import gallery6 from './images/gallery6.jpeg';
-import gallery7 from './images/gallery7.jpg';
-import gallery8 from './images/gallery8.jpg';
+import gallery7 from './images/gallery20.jpeg';
+import gallery8 from './images/gallery17.jpg';
 import gallery9 from './images/gallery9.jpeg';
 import gallery10 from './images/gallery10.jpeg';
+import gallery12 from './images/college14.jpeg';
+import gallery13 from './images/gallery15.jpeg';
+import gallery14 from './images/gallery16.jpeg';
+import gallery15 from './images/gallery13.jpeg';
+import gallery16 from './images/gallery14.jpeg';
 
 
 
@@ -39,7 +43,7 @@ const Home = ()=>{
             
         },
         {
-            src:sports,
+            src:gallery11,
             
         },
         {
@@ -83,7 +87,7 @@ const Home = ()=>{
             
         },
         {
-            src:gallery10,
+            src:gallery14,
             
         },
         {
@@ -91,11 +95,19 @@ const Home = ()=>{
             
         },
         {
-            src:winter,
+            src:gallery12,
             
         },
         {
-            src:ncc,
+            src:gallery13,
+            
+        },
+        {
+            src:gallery15,
+            
+        },
+        {
+            src:gallery16,
             
         },
     ];
@@ -105,7 +117,7 @@ const Home = ()=>{
             id:1,
             src:gallery10,
             title:"National Cadet Corps",
-            desc:"NCC Unit Starting Date: September, 1984.  139 Coy 25(A) Bn N.C.C  NCC Officer: Captain D.Vijaya Kumar",
+            desc:"The National Cadet Corps is the Indian military cadet corps with its head Quarters at New Delhi.",
 
         },
         {

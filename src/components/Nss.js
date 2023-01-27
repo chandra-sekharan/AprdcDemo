@@ -3,9 +3,9 @@ import './styles/Campus.css'
 import nss from './images/nss.jpg'
 import nss1 from './images/nss1.jpeg'
 import nss2 from './images/nss2.jpeg'
-import ncc3 from './images/ncc3.jpg'
-import ncc4 from './images/ncc4.jpg'
-import ncc5 from './images/ncc5.jpg'
+import ncc3 from './images/nss3.jpeg'
+import ncc4 from './images/nss4.jpeg'
+import ncc5 from './images/nss5.jpeg'
 import Loader from "./Loader";
 
 const Nss = ()=>{

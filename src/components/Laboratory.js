@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from "react";
 import './styles/Campus.css'
-import physics from './images/physics.PNG'
-import chemistry from './images/chemistry.jpeg'
-import computer from './images/gallery9.jpeg'
+import physics from './images/college8.jpeg'
+import chemistry from './images/college15.jpeg'
+import computer from './images/college10.jpeg'
 import Loader from "./Loader";
 
 const Laboratory = ()=>{

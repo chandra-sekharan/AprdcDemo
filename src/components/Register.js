@@ -10,6 +10,7 @@ const Register = ()=>{
     const [inputdata , setinputdata]=useState({
         fname:"",
         hallnumber:"",
+        branch:"",
         email:"",
         mnumber:""
     })
@@ -23,19 +24,19 @@ const Register = ()=>{
     const Postdata =async (e)=>{
         e.preventDefault();
         
-        const {fname , hallnumber,email,mnumber } = inputdata;
+        const {fname , hallnumber,branch,email,mnumber } = inputdata;
      
-        const res = await fetch("http://localhost:3001/student",{
+        const res = await fetch("https://aprdc-backend-wc83.onrender.com/student",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
             },
             body:JSON.stringify({
-                fname , hallnumber,email,mnumber
+                fname , hallnumber,branch,email,mnumber
             })
         })
 
-        
+     console.log(inputdata)        
         const status = res.status
         console.log(status)
         if(status === 200)
@@ -49,13 +50,18 @@ const Register = ()=>{
 
         
     }
+    setTimeout(()=>{
+         setAlert(false)
+         setAlert1(false)
+    },2000)
     return(
         <>
          {resAlert ? <Alert severity='success'>Registration Success</Alert>:''}
          {resAlert1?<Alert severity='error'>Registration failed</Alert>:''}
-         <form  onSubmit={Postdata}>
+         <form onSubmit={Postdata}>
             <input type="text" placeholder='Enter your full name' name="fname" required onChange={inputhandle} />
             <input type="text" placeholder='Enter your Hall ticket' name="hallnumber" required onChange={inputhandle} />
+            <input type="text" placeholder='Enter your Branch' name="branch" required onChange={inputhandle} />
             <input type="email" placeholder='Enter your Email' name="email" required onChange={inputhandle} />
             <input type="text" placeholder='Enter your mobile number' name="mnumber" required onChange={inputhandle} />
             <button>Register</button>

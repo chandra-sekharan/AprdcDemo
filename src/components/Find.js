@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const Find = ()=>{
    const [detail , setDetail] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:3001/details').then((Response)=>Response.json()).then((data)=>setDetail(data))
+        fetch('https://aprdc-backend-wc83.onrender.com/details').then((Response)=>Response.json()).then((data)=>setDetail(data))
     },[])
     
     
@@ -14,6 +14,7 @@ const Find = ()=>{
         <>
             <p>{data['fname']}</p>
             <p>{data['hallnumber']}</p>
+            <p>{data['branch']}</p>
             <p>{data['email']}</p>
             <p>{data['mnumber']}</p>
         </>

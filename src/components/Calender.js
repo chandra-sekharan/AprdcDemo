@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import calender from './images/calender.pdf'
+import calender from './pdf/calender.pdf'
 import Loader from "./Loader";
 
 const Calender = ()=>{

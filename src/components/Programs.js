@@ -5,10 +5,10 @@ import Mscs from './images/bscMscs.jpg';
 import BA from './images/BA.webp';
 import BCOM from './images/BCOM.jpg';
 import APSSDC from './images/Apssdc.jpg';
-import MSPDF from './images/BSCCOMPUTERS.pdf'
-import MPPDF from './images/BSCMATHS.pdf'
-import BAPDF from './images/BAHISTORY.pdf'
-import BCOMPDF from './images/BCOM.pdf'
+import MSPDF from './pdf/BSCCOMPUTERS.pdf'
+import MPPDF from './pdf/BSCMATHS.pdf'
+import BAPDF from './pdf/BAHISTORY.pdf'
+import BCOMPDF from './pdf/BCOM.pdf'
 import Loader from "./Loader";
 
 

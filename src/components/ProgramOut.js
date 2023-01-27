@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import ProgramOutcome from './images/ProgramOut.pdf'
+import ProgramOutcome from './pdf/ProgramOut.pdf'
 import Loader from "./Loader";
 
 const ProgramOut = () =>{
