@@ -11,8 +11,14 @@ const Find = ()=>{
     const searchdata =(e)=>{
       e.preventDefault()
       setLoad(true)
-      fetch(`http://localhost:3001/details/${search}`).then((Response)=>Response.json()).then((data)=>{
-        setDetail(data)
+      fetch(`https://aprdc-backend-wc83.onrender.com/details/${search}`).then((Response)=>Response.json()).then((data)=>{
+        if(data.length > 0)
+        {
+            setDetail(data)
+        }
+        else{
+            alert("No data Found")
+        }
         setLoad(false)
        })
      
@@ -28,7 +34,7 @@ const Find = ()=>{
         <div>
         <div className='searchstudent'>
         <form onSubmit={searchdata}>
-        <input type="text" placeholder='Enter your hall ticket' onChange={(e)=>setSearch(e.target.value)} />
+        <input type="text" placeholder='Enter Your Hall Ticket  caps only *' required onChange={(e)=>setSearch(e.target.value)} />
         <button >Search</button>
         </form>
         </div>
@@ -45,7 +51,7 @@ const Find = ()=>{
             </div>
            
         </div>
-        )}
+        ) }
         
         
         </div>
