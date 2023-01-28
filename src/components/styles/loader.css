@@ -27,3 +27,32 @@
     }
 
 }
+
+
+.smallloadersection{
+    width: 100%;
+    height: 70vh;
+}
+
+.smallloader{
+    width:70px;
+    height: 100px;
+    margin: auto;
+    margin-top: 200px !important;
+}
+.smallload{
+    width: 30px;
+    height:30px;
+    border: 10px solid black;
+    border-bottom: 10px solid rgb(11, 224, 196);
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 25px;
+    animation: rotatesmall .6s linear infinite;
+}
+
+@keyframes rotatesmall{
+    100%{
+        transform: rotate(360deg);
+    }
+}
