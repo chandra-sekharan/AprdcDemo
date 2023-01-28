@@ -37,6 +37,8 @@ import Alumini from './Alumini';
 import NAAC from './NAAC';
 import Register from './Register';
 import Find from './Find';
+import Mentoring from './Mentoring';
+import RTI from './RTI';
 
 
 const Router =() => {
@@ -107,6 +109,8 @@ const Router =() => {
         <Route path='/NAAC' element={<NAAC/>} />
         <Route path='/register' element={<Register/>} />
         <Route path='/find' element={<Find/>} />
+        <Route path='/mentoring' element={<Mentoring/>} />
+        <Route path='/RTI' element={<RTI/>} />
        </Routes>    
         
     </div>

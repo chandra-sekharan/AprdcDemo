@@ -88,7 +88,7 @@ const Register = ()=>{
          {resAlert1?<Alert severity='error'>Registration failed</Alert>:''}
          {load ? <Loadersmall/> :
          <>
-
+         <br></br><br></br>
          <center><h2>Student Registration</h2></center>
          <form onSubmit={Postdata}>
             <input type="text" placeholder='Enter your full name *' name="fname" required onChange={inputhandle} />
