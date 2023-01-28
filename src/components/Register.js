@@ -49,7 +49,9 @@ const Register = ()=>{
         e.preventDefault();
         setload(true)
         const {fname , hallnumber,branch,email,mnumber,image } = inputdata;
-        console.log(inputdata.image)
+
+     
+
         const res = await fetch("https://aprdc-backend-wc83.onrender.com/student",{
             method:"POST",
             headers:{

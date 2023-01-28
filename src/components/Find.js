@@ -12,6 +12,7 @@ const Find = ()=>{
       e.preventDefault()
       setLoad(true)
       fetch(`https://aprdc-backend-wc83.onrender.com/details/${search}`).then((Response)=>Response.json()).then((data)=>{
+
         if(data.length > 0)
         {
             setDetail(data)
@@ -19,6 +20,7 @@ const Find = ()=>{
         else{
             alert("No data Found")
         }
+
         setLoad(false)
        })
      
