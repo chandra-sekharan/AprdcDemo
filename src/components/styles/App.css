@@ -1,7 +1,6 @@
 /*form css*/
 form{
    width: 500px;
-   margin-top: 50px !important;
    margin: auto;
    display: flex;
    row-gap: 20px;
@@ -19,18 +18,17 @@ form label{
    
 }
 form button{
-   width: 20%;
-   height: 50px;
-   margin: auto;
-   background-color: rgb(32, 131, 245);
-   color: #fff;
+   width: 70px;
+   height: 6.7vh;
+   background-color: rgb(26,115,232);
    border: none;
-   border-radius: 10px;
+   color: #fff;
+   border-radius: 3px;
+   margin: auto;
 }
 form button:hover{
-   background-color: rgb(14, 99, 196);;
+   background-color: rgb(7, 68, 148);
 }
-
 
 
 /*mobile */
@@ -45,6 +43,12 @@ form button:hover{
       user-select:none;
       -webkit-tap-highlight-color:rgba(0,0,0,0);
    }
+
+   .searchstudent form{
+      margin: auto !important;
+      
+   }
+
    .header{
       background-color: #000 !important;
       height: 70px !important;

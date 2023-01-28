@@ -48,3 +48,40 @@
     width: 90%;
     margin: auto;
 }
+
+
+.gym .gallery{
+  background-color: #fff;
+
+}
+.gym .gallery h1{
+  line-height: 80px;
+  color: #000;
+}
+.gym .gallery .frame{
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 10px;
+  column-gap: 5px;
+}
+.gym .frame .gallery_image{
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+.gym .frame img{
+  transition: all .4s ease-in-out;
+}
+.gym .frame img:hover{
+  transform: scale(1.2);
+}
+
+.gym .gallery footer{
+  height: 7vh;
+}

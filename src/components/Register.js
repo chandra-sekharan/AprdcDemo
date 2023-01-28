@@ -1,13 +1,10 @@
 import { useState} from 'react'
-import {Alert} from '@mui/material'
 import Loadersmall from './Loadersmall'
 import compress from 'compress-base64';
 
 
 const Register = ()=>{
  
- const [resAlert , setAlert]=useState('');    
- const [resAlert1 , setAlert1]=useState(''); 
  const [load , setload]=useState(false);
 
   
@@ -16,6 +13,8 @@ const Register = ()=>{
         fname:"",
         hallnumber:"",
         branch:"",
+        yearofpass:"",
+        designation:"",
         email:"",
         mnumber:"",
         image:""
@@ -48,7 +47,7 @@ const Register = ()=>{
     const Postdata =async (e)=>{
         e.preventDefault();
         setload(true)
-        const {fname , hallnumber,branch,email,mnumber,image } = inputdata;
+        const {fname , hallnumber,branch,yearofpass,designation,email,mnumber,image } = inputdata;
 
      
 
@@ -58,7 +57,7 @@ const Register = ()=>{
                 "Content-Type":"application/json"
             },
             body:JSON.stringify({
-                fname , hallnumber,branch,email,mnumber,image
+                fname , hallnumber,branch,yearofpass,designation,email,mnumber,image
             })
         })
 
@@ -67,33 +66,31 @@ const Register = ()=>{
         console.log(status)
         if(status === 200)
         {
-           setAlert(true)
+           alert("Registration Success")
             
         }
         else{
-            setAlert1(true)
+            alert("Registration failed")
         }
 
         
     }
     setTimeout(()=>{
-         setAlert(false)
-         setAlert1(false)
          setload(false)
-         
-    },1600)
+    },1800)
     return(
         <> 
-         {resAlert ? <Alert severity='success'>Registration Success</Alert>:''}
-         {resAlert1?<Alert severity='error'>Registration failed</Alert>:''}
+         
          {load ? <Loadersmall/> :
          <>
-         <br></br><br></br>
-         <center><h2>Student Registration</h2></center>
+         <br></br>
+         <center><h2>Student Registration</h2></center><br></br>
          <form onSubmit={Postdata}>
             <input type="text" placeholder='Enter your full name *' name="fname" required onChange={inputhandle} />
             <input type="text" placeholder='Enter your Hall ticket. caps only*' name="hallnumber" pattern='Y+[230]{4}[520]{3}[0-9]{2}' required onChange={inputhandle} />
             <input type="text" placeholder='Enter your Branch *' name="branch" required onChange={inputhandle} />
+            <input type="text" placeholder='Enter Year of Passing *' name="yearofpass" required onChange={inputhandle} />
+            <input type="text" placeholder='Enter Your Designation (if any)  optional' name="designation" onChange={inputhandle} />
             <input type="email" placeholder='Enter your Email *' name="email" required onChange={inputhandle} />
             <input type="text" placeholder='Enter your mobile number *' name="mnumber" required onChange={inputhandle} />
             <label><b>Upload your Photo *</b></label><input type="file" required onChange={handleImage} />
