@@ -26,7 +26,7 @@ const Register = ()=>{
      
     const Postdata =async (e)=>{
         e.preventDefault();
-        
+        setload(true)
         const {fname , hallnumber,branch,email,mnumber,image } = inputdata;
      
         const res = await fetch("http://localhost:3001/student",{
@@ -45,7 +45,7 @@ const Register = ()=>{
         if(status === 200)
         {
            setAlert(true)
-            setload(true)
+            
         }
         else{
             setAlert1(true)
