@@ -29,7 +29,7 @@ const Register = ()=>{
         setload(true)
         const {fname , hallnumber,branch,email,mnumber,image } = inputdata;
      
-        const res = await fetch("http://localhost:3001/student",{
+        const res = await fetch("https://aprdc-backend-wc83.onrender.com/student",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
