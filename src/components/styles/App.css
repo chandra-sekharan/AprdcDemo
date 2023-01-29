@@ -267,6 +267,10 @@ form button:hover{
    width:100px;
    
  }
+
+  form{
+    width:300px !important;
+ }
  }
 
 
