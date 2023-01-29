@@ -11,7 +11,7 @@ const Find = ()=>{
     const searchdata =(e)=>{
       e.preventDefault()
       setLoad(true)
-      fetch(`http://localhost:3001/details/${search}`).then((Response)=>Response.json()).then((data)=>{
+      fetch(`https://aprdc-backend-wc83.onrender.com/details/${search}`).then((Response)=>Response.json()).then((data)=>{
         setDetail(data)
         setLoad(false)
        })
