@@ -51,7 +51,7 @@ const Register = ()=>{
 
      
 
-        const res = await fetch("https://aprdc-backend-wc83.onrender.com/student",{
+        const res = await fetch("http://localhost:3001/student",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
@@ -61,7 +61,7 @@ const Register = ()=>{
             })
         })
 
-     console.log(inputdata)        
+        console.log(res)  
         const status = res.status
         console.log(status)
         if(status === 200)

@@ -39,6 +39,7 @@ import Register from './Register';
 import Find from './Find';
 import Mentoring from './Mentoring';
 import RTI from './RTI';
+import Infrastructure from './Infrastructure';
 
 
 const Router =() => {
@@ -111,6 +112,7 @@ const Router =() => {
         <Route path='/find' element={<Find/>} />
         <Route path='/mentoring' element={<Mentoring/>} />
         <Route path='/RTI' element={<RTI/>} />
+        <Route path='/infrastructure' element={<Infrastructure/>} />
        </Routes>    
         
     </div>
