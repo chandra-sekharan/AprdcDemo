@@ -51,7 +51,7 @@ const Register = ()=>{
 
      
 
-        const res = await fetch("http://localhost:3001/student",{
+        const res = await fetch("https://aprdc-backend-wc83.onrender.com/student",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

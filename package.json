@@ -14,6 +14,7 @@
     "browser-image-compression": "^2.0.0",
     "compress-base64": "^1.0.2",
     "react": "^18.2.0",
+    "react-card-slider-component": "^1.0.9",
     "react-dom": "^18.2.0",
     "react-file-base64": "^1.0.3",
     "react-modal-image": "^2.6.0",

@@ -35,6 +35,8 @@ import gallery16 from './images/gallery14.jpeg';
 
 
 
+
+
 const Home = ()=>{
 
     const photos = [
@@ -134,26 +136,75 @@ const Home = ()=>{
         },
         
     ]
- const lab = [
-    {
-        id:1,
-        src:physics,
-        title:"Physics Laboratory",
-        desc:"The Physics Laboratory practical contains comprehensive hands-on practice of laboratory experiments.",
-    },
-    {
-        id:2,
-        src:chemistry,
-        title:"Chemistry Laboratory",
-        desc:"The Chemistry Laboratory practical contains comprehensive hands-on practice of laboratory experiments.",
-    },
-    {
-        id:3,
-        src:gallery9,
-        title:"Computer Lab",
-        desc:"Lorium ipsem is a dummy text used for random purpose it is used by developers for dummy content",
-    },
- ]
+  
+    const Events=[
+        {
+           date:"26 APR",
+           event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              
+        },
+        {
+            date:"15 AUG",
+            event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+               
+         },
+         {
+            date:"02 OCT",
+            event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+               
+         },
+         {
+            date:"26 OCT",
+            event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+               
+         },
+         {
+            date:"25 DEC",
+            event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+               
+         },
+         {
+            date:"26 JAN",
+            event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+               
+         },
+         {
+            date:"14 NOV",
+            event:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+               
+         },
+    ]
+
+    const alumini = [
+        {
+            image:ncc,
+            name:"Mark Zukenberg",
+            designation:"Chief Executive Officer",
+        },
+        {
+            image:ncc,
+            name:"Sunder Pichai",
+            designation:"Chief Executive Officer",
+        },
+        {
+            image:ncc,
+            name:"Satya Nadella",
+            designation:"Chief Executive Officer",
+        },
+        {
+            image:ncc,
+            name:"Elon Musk",
+            designation:"Chief Executive Officer",
+        },
+        {
+            image:ncc,
+            name:"Bill Gates",
+            designation:"Chief Executive Officer",
+        },
+    ]
+
+
+    
 
  const Brands = [Anu,swayam,Apssdc,nlist,innovation,edx];
  
@@ -209,23 +260,70 @@ console.log(photos)
             )}
             <footer></footer>
             </div> 
-            <div className="labs">
-            <h1>HANDS-ON LAB</h1>   
-            <div className="events">  
-                {lab.map(data=>
-                <div className="event">
-                   <div className="image">
-                    <img src={data.src} alt="" />
-                   </div>
-                  <h2>{data.title}</h2><br></br>
-                  <h6>{data.desc}</h6>
-                  <footer></footer>
+            <br></br><br></br>
+            <div className="secondContainer">
+                
+                <div className="alumini">
+                    <div className="alumini_section1">
+                        <h2 className="title">Our Alumini</h2>
+                        <div className="alumini_sec1">
+                    <Carousel cols={1} rows={1} gap={1} loop >
+                    {alumini.map(data=>
+                    <Carousel.Item>
+                       <div className="al_card">
+                            <div className="al_img">
+                                <div className="al_image">
+                                 <img src={data.image} alt=""/>
+                                </div>                        
+                            </div>
+                            <div className="al_about">
+                                <center><h2>{data.name}</h2></center>
+                                <center><p>{data.designation}</p></center>
+                            </div>
+                       </div>
+                       </Carousel.Item>
+                       )}
+                       </Carousel>
+                       </div>
+                    </div>
+                    <div className="alumini_section2">
+                        <h2 className="title">Recent Placements</h2>
+                        <div className="alumini_sec1">
+                    <Carousel cols={1} rows={1} gap={1} loop >
+                    {alumini.map(data=>
+                    <Carousel.Item>
+                       <div className="al_card">
+                            <div className="al_img">
+                                <div className="al_image">
+                                 <img src={data.image} alt=""/>
+                                </div>                        
+                            </div>
+                            <div className="al_about">
+                                <center><h2>{data.name}</h2></center>
+                                <center><p>{data.designation}</p></center>
+                            </div>
+                       </div>
+                       </Carousel.Item>
+                       )}
+                       </Carousel>
+                       </div>
+                    </div>
                 </div>
-               )}
-               <footer></footer>
+                <div className="event_notifier">
+                    <h4>EVENTS</h4>
+                    <div className="event_manager">
+                        {Events.map(data=>
+                        <div className="events_box">
+                            <div className="events_date">
+                                <p>{data.date}</p>
+                            </div>
+                            <span>{data.event}</span>
+                        </div>
+                        )}
+                    </div>
+                </div>
             </div>
-            </div>
-            
+
             <div className="gallery">
               <center><h1>Gallery</h1></center><br></br><br></br>
               <div className="frame">
