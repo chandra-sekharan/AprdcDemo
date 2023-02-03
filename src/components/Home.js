@@ -4,8 +4,6 @@ import Carousel from 'better-react-carousel'
 import ncc from './images/ncc.jpg'
 import sports from './images/sports.jpg'
 import nss from './images/nss4.jpeg'
-import physics from './images/physics.PNG'
-import chemistry from './images/chemistry.jpeg';
 import college from './images/gallery19.jpeg'
 import logo from './images/logo1.jpg'
 import swayam from './images/swayam.png'
@@ -31,7 +29,7 @@ import gallery13 from './images/gallery15.jpeg';
 import gallery14 from './images/gallery16.jpeg';
 import gallery15 from './images/gallery13.jpeg';
 import gallery16 from './images/gallery14.jpeg';
-
+import sample from './images/sample.jpg'
 
 
 
@@ -114,6 +112,8 @@ const Home = ()=>{
         },
     ];
  
+
+
     const Moments = [
         {
             id:1,
@@ -136,6 +136,10 @@ const Home = ()=>{
         },
         
     ]
+
+
+
+
   
     const Events=[
         {
@@ -175,35 +179,50 @@ const Home = ()=>{
          },
     ]
 
+
+
     const alumini = [
         {
-            image:ncc,
+            image:sample,
             name:"Mark Zukenberg",
             designation:"Chief Executive Officer",
         },
         {
-            image:ncc,
+            image:sample,
             name:"Sunder Pichai",
             designation:"Chief Executive Officer",
         },
         {
-            image:ncc,
+            image:sample,
             name:"Satya Nadella",
             designation:"Chief Executive Officer",
         },
         {
-            image:ncc,
+            image:sample,
             name:"Elon Musk",
             designation:"Chief Executive Officer",
         },
         {
-            image:ncc,
+            image:sample,
             name:"Bill Gates",
             designation:"Chief Executive Officer",
         },
     ]
 
-
+    const eventUpdate = [
+        {
+            src:gallery1,
+            
+        },
+        {
+            src:gallery10,
+            
+        },
+        {
+            src:gallery8,
+            
+        },
+    ]
     
 
  const Brands = [Anu,swayam,Apssdc,nlist,innovation,edx];
@@ -261,57 +280,22 @@ console.log(photos)
             <footer></footer>
             </div> 
             <br></br><br></br>
-            <div className="secondContainer">
-                
-                <div className="alumini">
-                    <div className="alumini_section1">
-                        <h2 className="title">Our Alumini</h2>
-                        <div className="alumini_sec1">
-                    <Carousel cols={1} rows={1} gap={1} loop >
-                    {alumini.map(data=>
-                    <Carousel.Item>
-                       <div className="al_card">
-                            <div className="al_img">
-                                <div className="al_image">
-                                 <img src={data.image} alt=""/>
-                                </div>                        
-                            </div>
-                            <div className="al_about">
-                                <center><h2>{data.name}</h2></center>
-                                <center><p>{data.designation}</p></center>
-                            </div>
+          <div className="secondContainer">
+               <div className="eventsection">
+                  <div className="eventupdate">
+                     <Carousel cols={1} rows={1} gap={1} loop >
+                     {eventUpdate.map(data=>
+                     <Carousel.Item>
+                       <div className="events_up">
+                        <img src={data.src} alt=""/>
                        </div>
                        </Carousel.Item>
                        )}
                        </Carousel>
-                       </div>
-                    </div>
-                    <div className="alumini_section2">
-                        <h2 className="title">Recent Placements</h2>
-                        <div className="alumini_sec1">
-                    <Carousel cols={1} rows={1} gap={1} loop >
-                    {alumini.map(data=>
-                    <Carousel.Item>
-                       <div className="al_card">
-                            <div className="al_img">
-                                <div className="al_image">
-                                 <img src={data.image} alt=""/>
-                                </div>                        
-                            </div>
-                            <div className="al_about">
-                                <center><h2>{data.name}</h2></center>
-                                <center><p>{data.designation}</p></center>
-                            </div>
-                       </div>
-                       </Carousel.Item>
-                       )}
-                       </Carousel>
-                       </div>
-                    </div>
-                </div>
-                <div className="event_notifier">
+                     </div>
+                 <div className="event_notifier">
                     <h4>EVENTS</h4>
-                    <div className="event_manager">
+                      <div className="event_manager">
                         {Events.map(data=>
                         <div className="events_box">
                             <div className="events_date">
@@ -320,7 +304,52 @@ console.log(photos)
                             <span>{data.event}</span>
                         </div>
                         )}
+                      </div>
                     </div>
+                </div>
+                <div className="alumini">
+                <h2 className="title">Our Alumini</h2>
+                   <div className="alumini_section1">
+                        <div className="alumini_sec1">
+                     <Carousel cols={1} rows={1} gap={1} loop >
+                     {alumini.map(data=>
+                     <Carousel.Item>
+                       <div className="al_card">
+                            <div className="al_img">
+                                <div className="al_image">
+                                 <img src={data.image} alt=""/>
+                                </div>                        
+                            </div>
+                            <div className="al_about">
+                                <center><h2>{data.name}</h2></center>
+                                <center><p>{data.designation}</p></center>
+                            </div>
+                       </div>
+                       </Carousel.Item>
+                       )}
+                       </Carousel>
+                       </div>
+                       <div className="alumini_sec1">
+                     <Carousel cols={1} rows={1} gap={1} loop >
+                     {alumini.map(data=>
+                     <Carousel.Item>
+                       <div className="al_card">
+                            <div className="al_img">
+                                <div className="al_image">
+                                 <img src={data.image} alt=""/>
+                                </div>                        
+                            </div>
+                            <div className="al_about">
+                                <center><h2>{data.name}</h2></center>
+                                <center><p>{data.designation}</p></center>
+                            </div>
+                       </div>
+                       </Carousel.Item>
+                       )}
+                       </Carousel>
+                       </div>
+                    </div>
+                    
                 </div>
             </div>
 

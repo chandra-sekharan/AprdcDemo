@@ -36,9 +36,8 @@ const Header =()=>{
         ];
     const Academics = [{id:"Programs-Offered",name:"Programs Offered",},{id:"Admissions",name:"Admissions",},{id:"Program-Outcomes",name:"Program Outcomes",},{id:"Departments",name:"Departments"},{id:"Academic-Calender",name:"Academic Calender"},{id:"Achievements",name:"Achievements"},{id:"Syllabus",name:"Syllabus"},];
     const Facilities=[{id:"Hostel",name:"Hostel",},{id:"Blind-Software",name:"Blind Software",},{id:"RO-Water-Plant",name:"RO Water Plant",},{id:"Industrial-Collaboration",name:"Industrial Collaboration",},{id:"GYM",name:"GYM",},{id:"mentoring",name:"Mentoring",},{id:"register",name:"Student Registration",}];
-    const Campus = [{id:"Library",name:"Library",},{id:"NCC",name:"NCC",},{id:"NSS",name:"NSS",},{id:"Placement-Cell",name:"Placement Cell",},{id:"Laboratories",name:"Laboratories",},];
+    const Campus = [{id:"Library",name:"Library",},{id:"NCC",name:"NCC",},{id:"NSS",name:"NSS",},{id:"Placement-Cell",name:"Placement Cell",},{id:"Laboratories",name:"Laboratories"},{id:"infrastructure",name:"Infrastructure"}];
     const Visit = [{id:"Visit-APRDC",name:"Visit APRDC"} , {id:"Maps-and-Direction",name:"Maps and Direction"},];
-    const Infra = [{id:"infrastructure",name:"Infrastructure"} ,];
     const About = [{id:"History-of-APRDC",name:"History of APRDC"},{id:"List-of-succcession-of-Principals",name:"List of succcession of Principals"},{id:"College-Profile",name:"College Profile"},{id:"NIRF",name:"NIRF"},{id:"AISHE",name:"AISHE"},];
 
     const [menuitems , setitems] = useState(['']);
@@ -119,10 +118,9 @@ const Header =()=>{
                     <li onClick={()=>sub(Administration)}>Administration</li><br></br>
                     <li onClick={()=>sub(Academics)}>Academics</li><br></br>
                     <li onClick={()=>sub(Facilities)}>Facilities</li><br></br>
-                    <li onClick={()=>sub(Infra)}>Infrastructure</li><br></br>
                     <li onClick={()=>sub(Campus)}>Campus</li><br></br>
                     <li onClick={()=>sub(Visit)}>Visit</li><br></br>
-                    <li onClick={()=>sub(About)}>About</li>
+                    <li onClick={()=>sub(About)}>About</li><br></br>
                 </ul>
                 </div>
                 <Submenu items={menuitems} close={close}/>
