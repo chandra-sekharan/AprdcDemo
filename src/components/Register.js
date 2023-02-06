@@ -26,6 +26,20 @@ const Register = ()=>{
     const handleImage = (e)=>{
         const file = e.target.files[0];
         const reader = new FileReader();
+<<<<<<< HEAD
+=======
+        reader.onload = event => {
+          compress(event.target.result, {
+            width: 400,
+            type: 'image',
+            max: 200, 
+            min: 20, 
+            quality: 10
+          }).then(result => {
+            setinputdata({...inputdata,image:result})
+          });
+        };
+>>>>>>> 9727df68946f56572ee419863b76b07025a25fa2
         reader.readAsDataURL(file);
         reader.onload = (event) =>{
             const imgelement = document.createElement("img");
