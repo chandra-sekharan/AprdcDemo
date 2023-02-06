@@ -31,7 +31,7 @@ const Register = ()=>{
         reader.onload = event => {
           compress(event.target.result, {
             width: 400,
-            type: 'image/png',
+            type: 'image',
             max: 200, 
             min: 20, 
             quality: 10
