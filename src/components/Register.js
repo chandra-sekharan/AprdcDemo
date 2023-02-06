@@ -1,7 +1,5 @@
 import { useState} from 'react'
 import Loadersmall from './Loadersmall'
-import compress from 'compress-base64';
-
 
 const Register = ()=>{
  
@@ -26,22 +24,25 @@ const Register = ()=>{
 
     }
     const handleImage = (e)=>{
-        const file = e.target.files[0]
+        const file = e.target.files[0];
         const reader = new FileReader();
-        reader.onload = event => {
-          compress(event.target.result, {
-            width: 400,
-            type: 'image/png',
-            max: 200, 
-            min: 20, 
-            quality: 10
-          }).then(result => {
-            setinputdata({...inputdata,image:result})
-          });
-        };
         reader.readAsDataURL(file);
-        
-       }
+        reader.onload = (event) =>{
+            const imgelement = document.createElement("img");
+            imgelement.src = event.target.result;
+            imgelement.onload = (e)=>{
+                const canvas = document.createElement("canvas");
+                const MAX_WIDTH = 400;
+                const scalesize = MAX_WIDTH / e.target.width
+                canvas.width = MAX_WIDTH;
+                canvas.height = e.target.height * scalesize;
+                const ctx = canvas.getContext("2d");
+                ctx.drawImage(e.target , 0,0,canvas.width,canvas.height);
+                const srcEncoded = ctx.canvas.toDataURL(e.target , 'image/jpg');
+                setinputdata({...inputdata,image:srcEncoded});
+            }
+        }
+    }
     
      
     const Postdata =async (e)=>{
@@ -93,7 +94,7 @@ const Register = ()=>{
             <input type="text" placeholder='Enter Your Designation (if any)  optional' name="designation" onChange={inputhandle} />
             <input type="email" placeholder='Enter your Email *' name="email" required onChange={inputhandle} />
             <input type="text" placeholder='Enter your mobile number *' name="mnumber" required onChange={inputhandle} />
-            <label><b>Upload your Photo *</b></label><input type="file" required onChange={handleImage} />
+            <label><b>Upload your Photo *</b></label><input type="file" required  accept="image/*" onChange={handleImage} />
             <button>Register</button>
          </form>
          </>

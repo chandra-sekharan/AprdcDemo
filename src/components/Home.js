@@ -30,6 +30,11 @@ import gallery14 from './images/gallery16.jpeg';
 import gallery15 from './images/gallery13.jpeg';
 import gallery16 from './images/gallery14.jpeg';
 import sample from './images/sample.jpg'
+import ShankarNarayana from './images/shankarNarayana.jpg'
+import RamManohar from './images/RamManohar.png'
+import PeriMahesh from './images/PeriMahesh.jpg'
+import HariKrishna from './images/HariKrishna.jpg'
+import MHNaik from './images/MHNaik.jpg'
 
 
 
@@ -183,6 +188,34 @@ const Home = ()=>{
 
     const alumini = [
         {
+            image:ShankarNarayana,
+            name:"Sri M.Shankar Narayana",
+            designation:"Hon’ble Minister for Road and Buildings",
+        },
+        {
+            image:RamManohar,
+            name:"Sri V.Ram Manohar",
+            designation:"Special Secretary to Govt. of A.P.,Municipal Administration and Urban Development",
+        },
+        {
+            image:HariKrishna,
+            name:"Sri Hari Krishna",
+            designation:"Vice-Chairman, TUDA",
+        },
+        {
+            image:PeriMahesh,
+            name:"Sri Peri Mahesh",
+            designation:"Editor, Career 360",
+        },
+        {
+            image:MHNaik,
+            name:"Sri M.H.Naik",
+            designation:"Commissioner, Income Tax, IRS",
+        },
+    ]
+
+    const fresher = [
+        {
             image:sample,
             name:"Mark Zukenberg",
             designation:"Chief Executive Officer",
@@ -283,7 +316,7 @@ console.log(photos)
           <div className="secondContainer">
                <div className="eventsection">
                   <div className="eventupdate">
-                     <Carousel cols={1} rows={1} gap={1} loop >
+                     <Carousel cols={1} rows={1} gap={5} loop >
                      {eventUpdate.map(data=>
                      <Carousel.Item>
                        <div className="events_up">
@@ -311,7 +344,7 @@ console.log(photos)
                 <h2 className="title">Our Alumini</h2>
                    <div className="alumini_section1">
                         <div className="alumini_sec1">
-                     <Carousel cols={1} rows={1} gap={1} loop >
+                     <Carousel cols={1} rows={1} gap={5} loop >
                      {alumini.map(data=>
                      <Carousel.Item>
                        <div className="al_card">
@@ -331,7 +364,7 @@ console.log(photos)
                        </div>
                        <div className="alumini_sec1">
                      <Carousel cols={1} rows={1} gap={1} loop >
-                     {alumini.map(data=>
+                     {fresher.map(data=>
                      <Carousel.Item>
                        <div className="al_card">
                             <div className="al_img">

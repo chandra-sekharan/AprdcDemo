@@ -120,6 +120,56 @@ form button:hover{
    .events .event{
       width: 350px !important;
    }
+
+   
+   .secondContainer{
+      display:flex;
+      flex-direction: column;
+      
+   }
+   .secondContainer .alumini{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   .secondContainer .alumini .alumini_section1{
+      display: flex;
+      flex-direction: column;
+   }
+ 
+   .alumini_sec1{
+      margin: auto;
+   }
+
+   .eventsection{
+      display: flex;
+      flex-direction: column;
+   }
+    .eventsection .event_notifier{
+      margin: auto;
+      width: 100%;
+      
+    }
+    .eventsection .eventupdate{
+       width: 100%;
+       
+    }
+    .title{
+      width: 150px !important;
+    }
+    .event_notifier h4{
+      text-align: center;
+    }
+    
+    .eventsection .event_manager{
+      
+      margin: auto;
+      margin-right: auto;
+    }
+    .events_up img{
+      width: 100% !important;
+      
+    }
     /****/
     
     .menubox .header1{
